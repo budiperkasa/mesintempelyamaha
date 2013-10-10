@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall version="1.0.0" type="mambot" group="content">
+	<name>bot_autotag</name>
+	<author>Fiji Web Design</author>
+	<creationDate>2007</creationDate>
+	<copyright>(C) 2007 Fiji Web Design. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>gabe@fijiwebdesign.com</authorEmail>
+	<authorUrl>www.fijiwebdsign.com</authorUrl>
+	<version>0.1</version>
+	<description><![CDATA[
+	<p>
+	This mambot will auto tag the content items based on the title and title_alias keywords.
+	</p>
+	]]>
+	</description>
+	<files>
+		<filename mambot="bot_autotag">bot_autotag.php</filename>
+	</files>
+	<params>
+	
+		<param name="min_keyword_len" type="text" default="4" label="Min Keyword Length" description="The minimum length of valid keywords to extract from the title and title_alias." />
+		<param name="common_keywords" type="textarea" default="that these them their they there those" label="Common Keywords" description="Common words that should be ignored by the keyword extractor. Seperate by a space" cols="60" rows="30" />
+		<param name="@spacer" type="spacer" />
+		
+	</params>
+</mosinstall>

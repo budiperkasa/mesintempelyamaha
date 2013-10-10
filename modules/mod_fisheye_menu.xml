@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>AJAX MENU</name>
+	<author>Budi Perkasa</author>
+	<creationDate>02/21/2007 - Fixed 1 May 2008</creationDate>
+	<copyright>GNU GPL</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>info@budi-perkasa.com</authorEmail>
+	<authorUrl>www.budi-perkasa.com</authorUrl>
+	<version>1.4</version>
+	<description><![CDATA[
+	]]></description>
+	<files>
+<filename module="mod_fisheye_menu">mod_fisheye_menu.php</filename>
+<filename>mac_menu/png.htc</filename>
+<filename>mac_menu/menu.css</filename>
+<filename>mac_menu/logo.gif</filename>
+<filename>mac_menu/jquery.js</filename>
+<filename>mac_menu/iutil.js</filename>
+<filename>mac_menu/index.html</filename>
+<filename>mac_menu/fisheye.js</filename>
+<filename>mac_menu/code.txt</filename>
+<filename>mac_menu/images/fav.png</filename>
+<filename>mac_menu/images/appointment-new.png</filename>
+<filename>mac_menu/images/clock.png</filename>
+<filename>mac_menu/images/display.png</filename>
+<filename>mac_menu/images/document-print.png</filename>
+<filename>mac_menu/images/exit.png</filename>
+<filename>mac_menu/images/filefind.png</filename>
+<filename>mac_menu/images/fileopen.png</filename>
+<filename>mac_menu/images/gtk-cut.png</filename>
+<filename>mac_menu/images/home.png</filename>
+<filename>mac_menu/images/settings.png</filename>
+<filename>mac_menu/images/stop.png</filename>
+<filename>mac_menu/images/spacer.gif</filename>
+<filename>mac_menu/images/index.html</filename>
+
+	</files>
+	<params>
+<param name="fmenu_align" type="text" default="center" label="FishEye Menu Align" description="Type : left, center or right" />
+<param name="txtcolor" type="text" default="#333333" label="Menu Text Font Color" description="Text Color in hex format, eg. #000000,#CCCCCC" />
+<param name="fontsize" type="text" default="12px" label="Menu Text Font Size" description="Font size in pixel, eg.12px,13px" />
+<param name="fmenu_itemwidth" type="text" default="40" label="Width of Icon" description="Original icon width" />
+<param name="fmenu_itemmaxwidth" type="text" default="60" label="Maxwidth of Icon" description="Max icon width when zooming" />
+<param name="fmenu_proximity" type="text" default="80" label="Proximity" description="Proximity" />
+<param name="@spacer" type="spacer" default="" label="" description="" />
+<param name="menu_status1" type="radio" default="1" label="Menu 1 Status" description="Enable or disable this menu">
+			<option value="0">Disable</option>
+			<option value="1">Enable</option>
+		</param>
+<param name="menu_url1" type="text" default="http://www.ninjoomla.com" label="Url for Menu 1 " description="Type an url here, eg.http://www.joomla.org" />
+
+<param name="menu_img1" type="imagelist" directory="/modules/fisheye_menu/images" default="home.png" label="Menu 1 image" description="Image for 1st Menu" />
+<param name="menu_txt1" type="text" default="Menu 1" label="Text for Menu 1 " description="Type your menu text here, eg.Home " />
+<param name="@spacer" type="spacer" default="" label="" description="" />
+<param name="menu_status2" type="radio" default="1" label="Menu 2 Status" description="Enable or disable this menu">
+			<option value="0">Disable</option>
+			<option value="1">Enable</option>
+		</param>
+<param name="menu_url2" type="text" default="http://www.ninjoomla.com" label="Url for Menu 2 " description="Type an url here, eg.http://www.joomla.org" />
+<param name="menu_img2" type="imagelist" directory="/modules/fisheye_menu/images" default="clock.png" label="Menu 2 image" description="Image for 2nd Menu" />
+<param name="menu_txt2" type="text" default="Menu 2" label="Text for Menu 2 " description="Type your menu text here, eg.Home " />
+<param name="@spacer" type="spacer" default="" label="" description="" />
+<param name="menu_status3" type="radio" default="1" label="Menu 3 Status" description="Enable or disable this menu">
+			<option value="0">Disable</option>
+			<option value="1">Enable</option>
+		</param>
+<param name="menu_url3" type="text" default="http://www.ninjoomla.com" label="Url for Menu 3 " description="Type an url here, eg.http://www.joomla.org" />
+<param name="menu_img3" type="imagelist" directory="/modules/fisheye_menu/images" default="fav.png" label="Menu 3 image" description="Image for 3th Menu" />
+<param name="menu_txt3" type="text" default="Menu 3" label="Text for Menu 3 " description="Type your menu text here, eg.Home " />
+<param name="@spacer" type="spacer" default="" label="" description="" />
+<param name="menu_status4" type="radio" default="1" label="Menu 4 Status" description="Enable or disable this menu">
+			<option value="0">Disable</option>
+			<option value="1">Enable</option>
+		</param>
+<param name="menu_url4" type="text" default="http://www.ninjoomla.com" label="Url for Menu 4 " description="Type an url here, eg.http://www.joomla.org" />
+<param name="menu_img4" type="imagelist" directory="/modules/fisheye_menu/images" default="settings.png" label="Menu 4 image" description="Image for 4th Menu" />
+<param name="menu_txt4" type="text" default="Menu 4" label="Text for Menu 4 " description="Type your menu text here, eg.Home " />
+<param name="@spacer" type="spacer" default="" label="" description="" />
+<param name="menu_status5" type="radio" default="1" label="Menu 5 Status" description="Enable or disable this menu">
+			<option value="0">Disable</option>
+			<option value="1">Enable</option>
+		</param>
+<param name="menu_url5" type="text" default="http://www.ninjoomla.com" label="Url for Menu 5 " description="Type an url here, eg.http://www.joomla.org" />
+<param name="menu_img5" type="imagelist" directory="/modules/fisheye_menu/images" default="stop.png" label="Menu 5 image" description="Image for 5th Menu" />
+<param name="menu_txt5" type="text" default="Menu 5" label="Text for Menu 5 " description="Type your menu text here, eg.Home " />
+<param name="@spacer" type="spacer" default="" label="" description="" />
+<param name="menu_status6" type="radio" default="1" label="Menu 6 Status" description="Enable or disable this menu">
+			<option value="0">Disable</option>
+			<option value="1">Enable</option>
+		</param>
+<param name="menu_url6" type="text" default="http://www.ninjoomla.com" label="Url for Menu 6 " description="Type an url here, eg.http://www.joomla.org" />
+<param name="menu_img6" type="imagelist" directory="/modules/fisheye_menu/images" default="exit.png" label="Menu 6 image" description="Image for 6th Menu" />
+<param name="menu_txt6" type="text" default="Menu 6" label="Text for Menu 6 " description="Type your menu text here, eg.Home " />
+<param name="@spacer" type="spacer" default="" label="" description="" />
+<param name="menu_status7" type="radio" default="0" label="Menu 7 Status" description="Enable or disable this menu">
+			<option value="0">Disable</option>
+			<option value="1">Enable</option>
+		</param>
+<param name="menu_url7" type="text" default="http://www.ninjoomla.com" label="Url for Menu 7 " description="Type an url here, eg.http://www.joomla.org" />
+<param name="menu_img7" type="imagelist" directory="/modules/fisheye_menu/images" default="exit.png" label="Menu 7 image" description="Image for 7th Menu" />
+<param name="menu_txt7" type="text" default="Menu 7" label="Text for Menu 7 " description="Type your menu text here, eg.Home " />
+</params>
+</mosinstall>

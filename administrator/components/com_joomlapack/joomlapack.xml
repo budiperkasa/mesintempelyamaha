@@ -1,0 +1,133 @@
+<?xml version = '1.0'?>
+<mosinstall type="component" >
+	<name>JoomlaPack</name>
+	<creationDate>2008-03-31</creationDate>
+	<author>JoomlaPack Developers</author>
+	<copyright>This component in released under the GNU/GPL v2 or later license</copyright>
+	<authorEmail>contact@joomlapack.net</authorEmail>
+	<authorUrl>http://www.joomlapack.net</authorUrl>
+	<version>1.1.1</version>
+	<description><![CDATA[
+		<div style="font-weight: normal;">
+			<h2>JoomlaPack 1.1.1 - for Joomla! 1.0.13 and above</h2>
+			<h3>The one for all backup solution</h3>
+			<hr/>
+			<p>You have just installed JoomlaPack, the complete open-source backup solution for
+			Joomla!-powered sites.</p>
+			<p>JoomlaPack takes a backup of your site's database and files in a standard .zip archive,
+			preloaded with an installer derived from the standard Joomla! installer.</p>
+			<p>Alternatively, JoomlaPack can get just an SQL dump of your database, much like phpMyAdmin
+			or mysqldump do, in order to restore only your database using an external tool.</p>
+			<p>The 1.1 Series is written mostly from scratch, striving to provide maximum compatibility
+			with the practically infinite variety of server configurations and unsurpassed efficiency.</p>
+			<p>If you really like this component, you can consider donating a few money. A PayPal donation
+			link appears on the bottom of the main menu page. It's totally optional.</p>
+			<p><strong>This component is restricted to Super Administrators only.</strong> Remember that
+			it creates a full backup, including your database. Thus, access to the backup can be a
+			potential security risk.</p>
+			<hr/>
+			<h3>Changelog</h3>
+			<p>The changelog is available on-line on the
+			<a href="http://www.joomlapack.net">official JoomlaPack web site</a>.</p>
+		</div>
+	]]></description>
+	<install>
+	<queries>
+		<query>DROP TABLE IF EXISTS `#__jp_packvars`</query>
+		<query>CREATE TABLE `#__jp_packvars` (
+				`id` INT NOT NULL AUTO_INCREMENT,
+				`key` VARCHAR(255) NOT NULL,
+				`value` varchar(255) default NULL,
+				`value2` LONGTEXT,
+				PRIMARY KEY  (`id`)
+				)
+			</query>
+		<query>DROP TABLE IF EXISTS `#__jp_def`</query>
+		<query>CREATE TABLE `#__jp_def` (
+				`def_id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+				`directory` VARCHAR(255) NOT NULL,
+				PRIMARY KEY(`def_id`)
+				)
+			</query>
+	</queries>
+	</install>
+	<uninstall>
+	<queries>
+		<query>DROP TABLE IF EXISTS `#__jp_packvars`;</query>
+		<query>DROP TABLE IF EXISTS `#__jp_def`;</query>
+	</queries>
+	</uninstall>
+		<files>
+			<filename>includes/CFullBackup.php</filename>
+			<filename>joomlapack.php</filename>
+		</files>
+
+	<administration>
+		<menu>JoomlaPack</menu>
+		<submenu>
+			<menu act="cpanel">Control Panel</menu>
+			<menu act="config">Options</menu>
+			<menu act="def">Exclude Directories</menu>
+			<menu act="pack">Backup Now</menu>
+			<menu act="backupadmin">Manage Backup Files</menu>
+			<menu act="log">Backup Log</menu>
+		</submenu>
+		<files>
+			<filename>admin.joomlapack.html.php</filename>
+			<filename>admin.joomlapack.php</filename>
+			<filename>css/index.htm</filename>
+			<filename>css/jpcss.css</filename>
+			<filename>includes/CAltInstaller.php</filename>
+			<filename>includes/CCUBE.php</filename>
+			<filename>includes/CConfiguration.php</filename>
+			<filename>includes/CDBBackupEngine.php</filename>
+			<filename>includes/CDirExclusionFilter.php</filename>
+			<filename>includes/CFSAbstraction.php</filename>
+			<filename>includes/CFilelistEngine.php</filename>
+			<filename>includes/CInstallerDeploymentEngine.php</filename>
+			<filename>includes/CJPLogger.php</filename>
+			<filename>includes/CJVAbstract.php</filename>
+			<filename>includes/CLangManager.php</filename>
+			<filename>includes/CPackerEngine.php</filename>
+			<filename>includes/CZIPCreator.php</filename>
+			<filename>includes/ajaxtool.php</filename>
+			<filename>includes/fBUAdmin.php</filename>
+			<filename>includes/fConfig.php</filename>
+			<filename>includes/fDebug.php</filename>
+			<filename>includes/fDirExclusion.php</filename>
+			<filename>includes/fLog.php</filename>
+			<filename>includes/fMain.php</filename>
+			<filename>includes/fPack.php</filename>
+			<filename>includes/fStats.php</filename>
+			<filename>includes/fUnlock.php</filename>
+			<filename>includes/index.htm</filename>
+			<filename>includes/sajax.php</filename>
+			<filename>index.htm</filename>
+			<filename>installers/index.htm</filename>
+			<filename>installers/jp1011.tar.gz</filename>
+			<filename>installers/jp1011.xml</filename>
+			<filename>installers/jpi.tar.gz</filename>
+			<filename>installers/jpi.xml</filename>
+			<filename>installers/jpi2.tar.gz</filename>
+			<filename>installers/jpi2.xml</filename>
+			<filename>js/index.htm</filename>
+			<filename>js/percent_bar.js</filename>
+			<filename>js/xp_progress.js</filename>
+			<filename>lang/brazilian_portuguese.ini</filename>
+			<filename>lang/dutch.ini</filename>
+			<filename>lang/english.ini</filename>
+			<filename>lang/french.ini</filename>
+			<filename>lang/german.ini</filename>
+			<filename>lang/greek.ini</filename>
+			<filename>lang/index.htm</filename>
+			<filename>lang/italian.ini</filename>
+			<filename>lang/norwegian.ini</filename>
+			<filename>lang/slovenian.ini</filename>
+			<filename>lang/spanish.ini</filename>
+			<filename>temp/index.htm</filename>
+			<filename>toolbar.joomlapack.html.php</filename>
+			<filename>toolbar.joomlapack.php</filename>
+		</files>
+
+	</administration>
+</mosinstall>

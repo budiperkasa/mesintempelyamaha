@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mosinstall type="module" version="1.0.0">
+  <name>Tag Cloud</name>
+  <author>Gabiriele Lalasava</author>
+  <creationDate>Feb 05, 2007</creationDate>
+  <copyright>(C) 2004 Fiji Web Design</copyright>
+  <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+  <authorEmail>info@fijiwebdesign.com</authorEmail>
+  <authorUrl>www.fijiwebdesign.com</authorUrl>
+  <version>1.0.0.Beta</version>
+  <description><![CDATA[This module shows the tags added by com_tag in cloud view: <a href="http://fijiwebdesign.com/" target="_blank">http://fijiwebdesign.com/</a>]]></description>
+  <files>
+    <filename module="mod_tagcloud">mod_tagcloud.php</filename>
+  </files>
+    <params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Suffix to append to the CSS class attribute of this module." />
+		<param name="cache" type="radio" default="0" label="Enable Cache" description="Select whether to cache the content of this module">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="@spacer" type="spacer" default="&lt;h3&gt;Filters&lt;/h3&gt;" label="" description="" />
+		<param name="limit" type="text" default="" label="Tags Limit" description="Maximum number of tags to display in the tag cloud" />
+		<param name="cid" type="text" default="" label="Content Item Ids" description="The Id's of Content Items you want to limit the tags to. (comma seperated)" />
+		<param name="catid" type="text" default="" label="Category Ids" description="The Id's of Content Categories you want to limit the tags to." />
+		<param name="sectid" type="text" default="" label="Section Ids" description="The Id's of Content Sections you want to limit the tags to." />
+		<param name="userid" type="text" default="" label="User Ids" description="The Id's of Users you want to limit the tags to." />
+		<param name="tag" type="text" default="" label="Tags" description="The Tags for which only related tags will be retrieved. Related tags are tags that exist in Content tagged with the given tag." />
+		<param name="@spacer" type="spacer" default="&lt;h3&gt;Override Settings&lt;/h3&gt;" label="" description="" />
+		<param name="http_overide" type="radio" default="0" label="Enable HTTP Overide" description="Allow parameters passed via HTTP to override the filtering settings you set here (above). If set to true, then when you are viewing tagged content, only related tags will show in the cloud.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+  </params>
+  <queries>
+<query>
+DROP TABLE IF EXISTS `#__tag_config`;
+CREATE TABLE `jos_tag_config` (
+  `id` int(11) NOT NULL auto_increment,
+  `name` varchar(20) collate utf8_bin NOT NULL,
+  `label` varchar(100) collate utf8_bin NOT NULL,
+  `value` varchar(200) collate utf8_bin NOT NULL,
+  `type` varchar(3) collate utf8_bin NOT NULL,
+  `range` mediumtext collate utf8_bin NOT NULL,
+  `desc` mediumtext collate utf8_bin NOT NULL,
+  `namespace` varchar(20) collate utf8_bin NOT NULL,
+  `tabid` tinyint(2) NOT NULL,
+  `html` varchar(20) collate utf8_bin NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=6 ;
+</query>
+<query>
+INSERT INTO `#__tag_config` (`id`, `name`, `label`, `value`, `type`, `range`, `desc`, `namespace`, `tabid`, `html`) VALUES (1, 0x6164645f62746e5f747874, 0x41646420427574746f6e2054657874, 0x53617665, 0x737472, '', 0x546865206c6162656c206f662074686520627574746f6e20746f20636c69636b20746f207361766520746865207461677320696e70757474656420627920757365722e20, 0x636f6e666967, 1, 0x696e707574626f78),
+(2, 0x6164645f6c696e6b5f747874, 0x4164642054616773204c696e6b2054657874, 0x4164642054616773, 0x737472, '', 0x546865206c6162656c206f6620746865204c696e6b207468617420697320636c69636b656420746f206164642074616773202873686f77732074686520616464207461677320666f726d292e, 0x636f6e666967, 1, 0x696e707574626f78),
+(3, 0x746167735f736570, 0x5461677320536570657261746f72, 0x2c20, 0x737472, '', 0x54686520536570617261746f72206265747765656e20696e646976696475616c20746167732e2065673a206120636f6d6d6120282c20292e20, 0x636f6e666967, 1, 0x696e707574626f78),
+(4, 0x64656661756c745f616374, 0x44656661756c7420416374696f6e, 0x636c6f7564, 0x737472, '', 0x5468652064656661756c7420616374696f6e20746f20646f20696620746865726520617265206e6f20616374696f6e732072657175657374656420666f722074686520636f6d5f7461677320636f6d706f6e656e742e2042792064656661756c742c20746869732069732073657420746f2022636c6f756422207768696368206d65616e73207468617420696e6465782e7068703f6f7074696f6e3d636f6d5f7461672077696c6c2072756e3a20696e6465782e7068703f6f7074696f6e3d636f6d5f746167267461736b3d76696577266163743d636c6f7564, 0x636f6e666967, 2, 0x696e707574626f78),
+(5, 0x636c6f75645f746167735f6c696d6974, 0x436c6f75642054616773204c696d6974, 0x3230, 0x696e74, '', 0x546865206d6178696d756d206e756d626572206f66207461677320746f20646973706c617920696e2074686520636c6f756420766965772e20, 0x636f6e666967, 1, 0x696e707574626f78);
+</query>
+<query>
+DROP TABLE IF EXISTS `jos_tag_tabs`;
+CREATE TABLE `#__tag_tabs` (
+  `id` int(11) NOT NULL auto_increment,
+  `label` varchar(100) collate utf8_bin NOT NULL,
+  `desc` varchar(200) collate utf8_bin NOT NULL,
+  `category` varchar(20) collate utf8_bin NOT NULL,
+  `parent` int(11) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=3 ;
+</query>
+<query>
+INSERT INTO `#__tag_tabs` (`id`, `label`, `desc`, `category`, `parent`) VALUES (1, 0x5549, 0x5573657220496e746572666163652053657474696e6773, 0x636f6e666967, 0),
+(2, 0x417070, 0x4170706c69636174696f6e2053657474696e6773, 0x636f6e666967, 0);
+</query>
+  </queries>
+</mosinstall>

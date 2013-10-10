@@ -1,0 +1,18 @@
+User-agent: * 
+Allow: /
+Disallow: /administrator/
+Disallow: /cache/
+Disallow: /components/
+Disallow: /editor/
+Disallow: /help/
+Allow: /images/
+Disallow: /includes/
+Disallow: /language/
+Disallow: /mambots/
+Disallow: /media/
+Disallow: /modules/
+Disallow: /templates/
+Disallow: /installation/
+
+ 
+sitemap: http://cdn.attracta.com/sitemap/1004873.xml.gz

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- generator="FeedCreator 1.7.2" -->
+<rdf:RDF
+	xmlns="http://purl.org/rss/1.0/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel rdf:about="http://outboardmotoryamaha.com">
+		<title>Outboard Motor Yamaha</title>
+		<description>Welcome to main dealer yamaha outboard motor</description>
+		<link>http://outboardmotoryamaha.com</link>
+		<image rdf:resource="http://outboardmotoryamaha.com/images/M_images/joomla_rss.png" />
+	   <dc:date>2008-10-14T22:39:59+01:00</dc:date>
+		<items>
+			<rdf:Seq>
+				<rdf:li rdf:resource="http://outboardmotoryamaha.com/index.php?option=com_content&amp;task=view&amp;id=1&amp;Itemid=2"/>
+			</rdf:Seq>
+		</items>
+	</channel>
+	<image rdf:about="http://outboardmotoryamaha.com/images/M_images/joomla_rss.png">
+		<title>outboard motor yamaha</title>
+		<link>http://outboardmotoryamaha.com</link>
+		<url>http://outboardmotoryamaha.com/images/M_images/joomla_rss.png</url>
+	</image>
+	<item rdf:about="http://outboardmotoryamaha.com/index.php?option=com_content&amp;task=view&amp;id=1&amp;Itemid=2">
+		<dc:format>text/html</dc:format>
+		<dc:date>2004-06-12T11:54:06+01:00</dc:date>
+		<dc:source>http://outboardmotoryamaha.com</dc:source>
+		<title>PT. JASA MARINE HARDWARE</title>
+		<link>http://outboardmotoryamaha.com/index.php?option=com_content&amp;task=view&amp;id=1&amp;Itemid=2</link>
+		<description>Main Dealer Pusat Penjualan OUTBOARD MOTOR YAMAHA  Melayani :          -...</description>
+	</item>
+</rdf:RDF>

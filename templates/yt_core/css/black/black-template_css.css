@@ -1,0 +1,20 @@
+/*
+ * YOOtheme template club
+ * Copyright (C) 2007 YOOtheme
+ * http://www.yootheme.com
+ */
+
+/* layout styling */
+@import url(black-layout.css);
+
+/* general tag styling */
+@import url(black-general.css);
+
+/* menu styling */
+@import url(black-menu.css);
+
+/* module styling */
+@import url(black-module.css);
+
+/* Joomla core styling */
+@import url(black-joomla.css);

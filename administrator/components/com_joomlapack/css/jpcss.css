@@ -1,0 +1,92 @@
+.statusok {
+	font-weight: bold;
+	color: green;
+}
+
+.statusnotok {
+	font-weight: bold;
+	color: red;
+}
+
+.maintbl {
+	font-size: medium;
+}
+
+.sanityCheck {
+	text-align: center;
+	background-color: #FFFFCC;
+	border: thin dotted gray;
+	padding: 1em;
+	width: 60%;
+	margin-left: 19%;
+}
+
+div.sitePack {
+	width: 90%;
+	margin: 1em 3%;
+	background-color: #EEEEFF;
+	border: thin dotted black;
+	padding: 1.2em;
+}
+
+div.sitePack h4 {
+	margin: 0em;
+	color: navy;
+}
+
+#SearchForm, #SiteSelect {
+	text-align: left;
+	width: 90%;
+	margin: 1em 3%;
+	background-color: #EEEEFF;
+	border: thin dotted black;
+	padding: 1.2em;
+	font-size: small;
+}
+
+#SiteSelect label, #SearchForm label {
+	display: block;
+	float: left;
+	width: 25em;
+	margin-top: 0.3em;
+}
+
+#SearchForm input, #SearchForm select, #SiteSelect input, #SiteSelect select {
+	border: thin solid black;
+	margin-bottom: 0.2em;
+	width: 40%;
+	font-size: small;
+}
+
+.JPMiniBar {
+	background: #333333;
+	padding: 0.3em;
+	color: white;
+}
+
+.JPMiniBar a {
+	color: #cccccc;
+}
+
+#NextDirectory, #CurrentFragment {
+	padding: 3px;
+	margin: 0px;
+	font-size: x-small;
+	color: #666666;
+}
+
+#Timeout {
+	background-color: #FFFF99;
+	border: thick solid red;
+	padding: 0.4em;
+	width: 70%;
+}
+
+#Timeout a {
+	color: #990000;
+}
+
+#Timeout h4 {
+	color: #CC0000;
+	font-size: large;
+}

@@ -1,0 +1,5 @@
+<link rel="stylesheet" href="modules/fisheye_menu/menu.css" type="text/css" />
+<script type="text/javascript" src="modules/fisheye_menu/jquery.js"></script>
+<script type="text/javascript" src="modules/fisheye_menu/fisheye.js"></script>
+<script type="text/javascript" src="modules/fisheye_menu/iutil.js"></script>
+<script>jQuery.noConflict();</script>

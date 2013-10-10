@@ -1,0 +1,89 @@
+/* YOOLogin */
+div#yt-login {
+	width: 228px;
+}
+
+div#yt-login .yt-username, 
+div#yt-login .yt-password, 
+div#yt-login .yt-remember, 
+div#yt-login .yt-login-button {
+	float: left;
+}
+
+div#yt-login .yt-username, 
+div#yt-login .yt-password {
+	padding-right: 5px;
+}
+
+div#yt-login .yt-username input, div#yt-login .yt-password input {
+	width: 91px;
+	height: 12px;
+	padding: 4px 2px 2px 7px;
+	border: none;
+	background: url(../images/login_bg.png) 0 0 no-repeat;
+	float: left;
+	color: #646464;
+	font-size: 85%;
+}
+
+div#yt-login .yt-username input:hover, div#yt-login .yt-password input:hover,
+div#yt-login .yt-username input.sfhover, div#yt-login .yt-password input.sfhover  {
+	background: url(../images/login_bg_hover.png) 0 0 no-repeat;
+	color: #000000;
+}
+div#yt-login .yt-username input:focus, div#yt-login .yt-password input:focus,
+div#yt-login .yt-username input.sffocus, div#yt-login .yt-password input.sffocus  {
+	background: url(../images/login_bg_hover.png) 0 0 no-repeat;
+	color: #000000;
+}
+
+div#yt-login .yt-login-button a {
+	display: block;
+	height: 18px;
+	width: 18px;
+	background: url(../images/login_button.png) 0 0 no-repeat;
+}
+
+div#yt-login .yt-break {
+	clear: both;
+}
+
+div#yt-login .yt-lostpassword, div#yt-login .yt-registration {
+	float: left;
+	font-size: 80%;
+	line-height: 20px;
+}
+
+div#yt-login .yt-lostpassword {
+	width: 100px;
+}
+
+div#yt-login .yt-registration {
+	width: 120px;
+}
+
+div#yt-login .yt-lostpassword {
+	padding: 0px 5px 0px 0px;
+}
+
+div#yt-logout .yt-greeting {
+	margin: 0px 5px 0px 0px;
+	float: left;
+}
+
+div#yt-logout .yt-logout-button {
+	height: 20px;
+	width: 40px;
+	float: left;
+	background: url(../images/logout_button.png) 0 0 no-repeat;
+}
+
+div#yt-logout .yt-logout-button a {
+	display: block;
+	height: 20px;
+	width: 40px;
+	font-size: 80%;
+	line-height: 20px;
+	text-align: center;
+	overflow: hidden;
+}

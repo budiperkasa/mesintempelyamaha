@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mosinstall type="module" version="1.0.0">
+  <name>Freak Document Viewer</name>
+  <author>TPORT INTEGRATION</author>
+  <creationDate>27/03/2008</creationDate>
+  <copyright>This extension in released under the GNU/GPL License - http://www.gnu.org/copyleft/gpl.html</copyright>
+  <authorEmail>webdeveloper@tportintegration.com</authorEmail>
+  <authorUrl>tportintegration.com/v1</authorUrl>
+  <version>1.0</version>
+  <description>
+    TPORT INTEGRATION
+  </description>
+  <params>
+    <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (.moduletable), this allows individual module styling" />
+    <param name="disablecss" type="radio" default="0" label="Disable module's CSS (use external)?" description="Select whether to disable module's imported CSS styles or not.">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="cache" type="radio" default="0" label="Enable cache" description="Select whether to cache the contents of this module or not? Use this option when content caching is turned on.">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="ucd_displaytype" type="list" default="list" label="Content display type" description="How should we display our content? Highlights: 'Normal list' output an unordered -ul- list of items. The 'AJAX based cross fader' retrieves content dynamically, thus your web page loads faster. The jQuery fader/slider on the other hand provides a smoother fade and a cool 'slide' effect.">
+      <option value="list">Normal list</option>
+      <option value="ajaxfader">AJAX based cross fader</option>
+      <option value="jqueryfader">jQuery based cross fader/slider</option>
+    </param>
+    <param name="uniqueid" type="text" default="ucd-instance" label="Unique ID (required for the faders only)" description="This ID must be unique and must only contain latin characters with no spaces or numbers. So keep it simple, like 'sidenews'! This option allows you to have multiple boxes inside your template and published in any position." />
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="@spacer" type="spacer" default="======== CONTENT RETRIEVAL SETTINGS ========" label="" description="" />
+    <param name="where" type="list" default="section" label="Content source type" description="The type of source to retrieve content from. After this step you need to specify 'content source ID(s)' below.">
+      <option value="section">Content Section</option>
+      <option value="category">Content Category</option>
+      <option value="content">Content Item</option>
+      <option value="newsfeed">Newsfeed Category</option>
+      <option value="newsfeed_item">Newsfeed Item</option>
+    </param>
+    <param name="where_id" type="text" default="" label="Content source IDs (required)" description="The IDs of selected source type (above) to retrieve content/newsfeed items from. If you want to display content from multiple sources of the same type, simply write the specified IDs, seperated by a comma (e.g. 2,5,6). You must specify at least one ID in order for the module to work!" />
+    <param name="ordering" type="list" default="rdate" label="Ordering" description="The order that content items will be presented (doesn't apply to Newsfeed Category/Newsfeed Item obviously!). Use the 'random' option if you wanna re-create e.g. a fading 'newsflash', replacing the default newsflash module inside Joomla!">
+      <option value="rdate">Most recent first</option>
+      <option value="date">Oldest first</option>
+      <option value="alpha">Title Alphabetical</option>
+      <option value="ralpha">Title Reverse-Alphabetical</option>
+      <option value="hits">Most Hits</option>
+      <option value="rhits">Least Hits</option>
+      <option value="order">Ordering</option>
+      <option value="random">Random</option>
+    </param>
+    <param name="count" type="text" default="5" label="Item count" description="The number of content/newsfeed items to display (default is 5)." />
+    <param name="show_front" type="radio" default="0" label="Show frontpage items" description="Show/hide content items assigned to the Frontpage.">
+      <option value="1">show</option>
+      <option value="0">hide</option>
+    </param>
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="@spacer" type="spacer" default="======== ITEM DISPLAY SETTINGS ========" label="" description="" />
+    <param name="display" type="list" default="2" label="Display option" description="Select whether you want to display the title only, the introtext only or both.">
+      <option value="0">Title only</option>
+      <option value="1">Introtext only</option>
+      <option value="2">Title &amp; intotext</option>
+    </param>
+    <param name="linked" type="radio" default="1" label="Enable link in title" description="Select if you want the content item's title to link to the full text -if it exists- or to the related newsfeed.">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="datecreated" type="radio" default="1" label="Show item creation date" description="Select whether to show item creation date or not.">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="show_section_title" type="radio" default="1" label="Show section title" description="Show/hide Section Title">
+      <option value="1">show</option>
+      <option value="0">hide</option>
+    </param>
+    <param name="show_category_title" type="radio" default="1" label="Show catagory title" description="Show/hide Catagory Title">
+      <option value="1">show</option>
+      <option value="0">hide</option>
+    </param>
+    <param name="seperator" type="text" default=">>" label="Section - category seperator" description="A seperator between the section title and the category title, when both are displayed." />
+    <param name="words" type="text" default="" label="Introtext word limit" description="Word limitation for retrieved content item. Leave it blank if you DO NOT wish to limit the number of words!" />
+    <param name="chars" type="text" default="" label="Introtext character limit" description="Character limitation for retrieved content item. Leave it blank if you DO NOT wish to limit the number of characters!" />
+    <param name="more" type="radio" default="1" label="Show 'Read More' Link" description="Select whether to show a 'read more' link below retrieved content item or not.">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="plugins" type="radio" default="1" label="Load Plugins (Bots)" description="Select whether to process or not plugins (mambots/bots) used inside content items.">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="hideimages" type="radio" default="0" label="Hide introtext images?" description="Select whether to show or hide images contained inside the item's introtext. Useful when you want to create a single-line news ticker that cross fades!">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="cleanupimages" type="radio" default="0" label="Remove style attributes from images?" description="Select this option to remove unwanted style atrributes from images, like width, height, color or any other attribute that some WYSIWYG editors add in excess. Recommended when you want to control image sizing with your template's CSS.">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="striptags" type="radio" default="0" label="HTML cleanup" description="Do some HTML cleanup, especially when you limit the introtext by words or characters. This way you will not get 'unclosed' HTML tags like p (paragraph) that will cause your content to break. Use with caution! Allowed tags are: br, a, b, i, u, span. Adjust as necessery in the main php file of the module.">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="@spacer" type="spacer" default="======== AJAX CROSS FADER SETTINGS ========" label="" description="" />
+    <param name="ucd_ajf_width" type="text" default="100%" label="Cross fader box width" description="Set the cross fader box width in either pixels or percentages, like '100px' or '80%'." />
+    <param name="ucd_ajf_height" type="text" default="300px" label="Cross fader box height" description="Set the cross fader box height in either pixels or percentages, like '100px' or '80%'." />
+    <param name="ucd_ajf_delay" type="text" default="6000" label="Rotation delay" description="Set here the rotation delay time (in miliseconds) between items. 1000 means 1 second." />
+    <param name="ucd_ajf_bgcolor" type="text" default="#ffffff" label="Background color (required for IE6)" description="Define the background color of the container. This option is required for IE to display the fade effect correctly." />
+    <param name="ucd_ajf_bottomfade" type="radio" default="0" label="Show a smooth bottom fade?" description="Show/hide a smooth bottom fade. This option is ideal when the introtext exceeds in height the cross fader box height!">
+      <option value="1">show</option>
+      <option value="0">hide</option>
+    </param>
+    <param name="ucd_ajf_cache" type="text" default="10" label="AJAX cache refresh (in minutes)" description="Set here how often the AJAX cache refreshes in minutes. IMPORTANT: Do not set to '0' except for testing reasons!" />
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="@spacer" type="spacer" default="======== JQUERY CROSS FADER/SLIDER SETTINGS ========" label="" description="" />
+    <param name="ucd_jqf_cheight" type="text" default="300px" label="Cross fader/slider box height (px)" description="Set the cross fader/slider box height in pixels/ems (like '100px'), but NOT percentages!" />
+    <param name="ucd_jqf_anim" type="radio" default="slide" label="Animation effect" description="Choose animation effect.">
+      <option value="fade">Fade</option>
+      <option value="slide">Slide</option>
+    </param>
+    <param name="ucd_jqf_speed" type="text" default="750" label="Rotation speed" description="Set here the rotation speed (in miliseconds) between items. 1000 means 1 second." />
+    <param name="ucd_jqf_timeout" type="text" default="6000" label="Rotation delay" description="Set here the rotation delay time (in miliseconds) between items. 1000 means 1 second." />
+    <param name="ucd_jqf_bgcolor" type="text" default="#ffffff" label="Background color (required for IE6)" description="Define the background color of the container. This option is required for IE to display the fade effect correctly." />
+    <param name="ucd_jqf_bottomfade" type="radio" default="0" label="Show a smooth bottom fade?" description="Show/hide a smooth bottom fade. This option is ideal when the introtext exceeds in height the cross fader/slider box height!">
+      <option value="1">show</option>
+      <option value="0">hide</option>
+    </param>
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+  </params>
+  <files>
+    <filename module="mod_jw_ucd">mod_jw_ucd.php</filename>
+    <filename module="mod_jw_ucd">mod_jw_ucd/ajaxfader/ajaxfader.js</filename>
+    <filename module="mod_jw_ucd">mod_jw_ucd/ajaxfader/bottomfade.png</filename>
+    <filename module="mod_jw_ucd">mod_jw_ucd/ajaxfader/mod_jw_ucd.css</filename>
+    <filename module="mod_jw_ucd">mod_jw_ucd/jqueryfader/bottomfade.png</filename>
+    <filename module="mod_jw_ucd">mod_jw_ucd/jqueryfader/jquery.innerfade.js</filename>
+    <filename module="mod_jw_ucd">mod_jw_ucd/jqueryfader/jquery.js</filename>
+    <filename module="mod_jw_ucd">mod_jw_ucd/jqueryfader/mod_jw_ucd.css</filename>
+    <filename module="mod_jw_ucd">mod_jw_ucd/list/mod_jw_ucd.css</filename>
+  </files>
+</mosinstall>

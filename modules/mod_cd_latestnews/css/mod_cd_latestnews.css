@@ -1,0 +1,54 @@
+/* CSS style -  Core Design Latest News module for Joomla! 1.0 */
+
+/* Highslide CSS style */
+.mod_cd_latestnews .highslide-html {
+    background-color: white;
+    color: #000000;
+}
+.mod_cd_latestnews .highslide-html-blur {
+	
+}
+.mod_cd_latestnews .highslide-html-content-header {
+	height: 20px;
+	padding: 2px;
+}
+.mod_cd_latestnews .highslide-html-content {
+	position: absolute;
+   display: none;
+	width: 350px;
+}
+.mod_cd_latestnews .highslide-body {
+	padding: 0 10px 10px 10px;
+        color: #555555; 
+}
+.mod_cd_latestnews .highslide-display-block {
+    display: block;
+}
+.mod_cd_latestnews .highslide-display-none {
+    display: none;
+}
+.mod_cd_latestnews .highslide-move {
+    cursor: move;
+	 border: 0;
+	 height: 18px;
+	 padding: 2px;
+}
+.mod_cd_latestnews a.control {
+	float: right;
+	display: block;
+	/*position: relative;*/
+	margin: 0 5px;
+	font-size: 9pt;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #999 !important;
+}
+.mod_cd_latestnews a.control:hover {
+	color: black !important;
+}
+/* End */
+
+li.latestnews a.highslide {
+	cursor: pointer;
+}

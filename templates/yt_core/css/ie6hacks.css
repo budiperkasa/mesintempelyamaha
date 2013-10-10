@@ -1,0 +1,90 @@
+/*
+ * IE6 Hacks
+ */
+
+/* layout */
+div#toppanel {
+	position: static;
+}
+
+div#styleswitcher a {
+	cursor: pointer;
+}
+
+div#middle .background {
+	overflow: visible;
+	height: 140px;
+}
+
+div#middle .layoutleft div#main {
+	padding: 0px 0px 0px 7px;
+}
+
+div#middle .layoutright div#main {
+	padding: 0px 0px 0px 7px;
+}
+
+/* menu */
+#left div#submenu li {
+	width: 200px;
+	overflow: hidden;
+}
+
+#left div#submenu li.toggler {
+	overflow: visible;
+}
+
+#left div#submenu li.active {
+	overflow: visible;
+}
+
+.layoutleft div#submenu li.level2 a, .layoutleft div#submenu li.level2 span {
+	background: url(../images/submenu_level2_item_left_ie6.png) 0 0 no-repeat;
+}
+
+.layoutright div#submenu li.level2 a, .layoutright div#submenu li.level2 span {
+	background: url(../images/submenu_level2_item_right_ie6.png) 100% 0 no-repeat;
+}
+
+#left div#submenu li.active a {
+	color: #ffffff;
+}
+
+#left div#submenu-static li {
+	width: 200px;
+	overflow: hidden;
+}
+
+#left div#submenu-static li.toggler {
+	overflow: visible;
+}
+
+#left div#submenu-static li.active {
+	overflow: visible;
+}
+
+.layoutleft div#submenu-static li.level1 a, .layoutleft div#submenu-static li.level1 span {
+	background: url(../images/submenu_level2_item_left_ie6.png) 0 0 no-repeat;
+}
+
+.layoutright div#submenu-static li.level1 a, .layoutright div#submenu-static li.level1 span {
+	background: url(../images/submenu_level2_item_right_ie6.png) 100% 0 no-repeat;
+}
+
+#left div#submenu-static li.active a {
+	color: #ffffff;
+}
+
+/* joomla */
+div.search {
+	height: 20px;
+}
+
+/* extensions */
+div#yt-login {
+	width: auto;
+}
+
+div#yt-login .yt-lostpassword, div#yt-login .yt-registration {
+	line-height: 10px;
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall version="1.0" type="mambot" group="content">
+  <name>Tag</name>
+  <author>Gabiriele Lalasava</author>
+  <creationDate>May 14 2006</creationDate>
+  <copyright>Copyright 2006 Fiji Web Design, www.fijiwebdesing.com</copyright>
+  <license>GNU/GPL</license>
+  <authorEmail>info@fijiwebdesign.com</authorEmail>
+  <authorUrl>www.fijiwebdesign.com</authorUrl>
+  <version>0.1</version>
+  <description><![CDATA[
+  Use only with the tag component. This displays and allows adding of tags in content items.
+  ]]></description>
+  <files>
+	<filename mambot="bot_tag">bot_tag.php</filename>
+	<filename>bot_tag.xml</filename>
+  </files>
+  <params>
+	<param name="help" type="radio" default="1" label="Show Help Link?" description="Choose whether to show the help link below or not.">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+	<param name="helptxt" type="text" default="?" size="20" label="Help Link Text" description="What text should show for the help link?" />
+	<param name="@spacer" type="spacer" />
+  </params>
+</mosinstall>

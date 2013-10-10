@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mosinstall type="module" version="1.0.0">
+  <name>Core Design Login module</name>
+  <author>Daniel Rataj</author>
+  <creationDate>February 20th, 2008</creationDate>
+  <copyright>(C) 2007 GreatJoomla.com</copyright>
+  <license>Attribution-NonCommercial 3.0 Unported</license>
+  <authorEmail>info@greatjoomla.com</authorEmail>
+  <authorUrl>www.greatjoomla.com</authorUrl>
+  <version>1.0.7</version>
+  <description>
+    <![CDATA[<h2 style="border-bottom: 1px #C64934 dotted; color: #C64934">Core Design Login module for Joomla 1.0.13</h2>
+    <div style="background: transparent url(../modules/mod_cd_login/images/cd_login_module_logo.png) top left no-repeat; height: 68px; width: 120px; float: right; margin-right: 10px; margin-left: 10px"></div>
+      
+      ]]>
+  </description>
+  <files>
+    <filename module="mod_cd_login">mod_cd_login.php</filename>
+    <filename>mod_cd_login/index.html</filename>
+    <filename>mod_cd_login/license-cc-nc.txt</filename>
+    <filename>mod_cd_login/css/index.html</filename>
+    <filename>mod_cd_login/css/mod_cd_login.css</filename>
+    <filename>mod_cd_login/images/cd_login.png</filename>
+    <filename>mod_cd_login/images/cd_login_moduletitle.png</filename>
+    <filename>mod_cd_login/images/cd_login-button-bg.png</filename>
+    <filename>mod_cd_login/images/cd_login-input-password.png</filename>
+    <filename>mod_cd_login/images/cd_login-input-username.png</filename>
+    <filename>mod_cd_login/images/cd_login-login.png</filename>
+    <filename>mod_cd_login/images/cd_login-logout.png</filename>
+    <filename>mod_cd_login/images/cd_login_module_logo.png</filename>
+    <filename>mod_cd_login/images/index.html</filename>
+    <filename>mod_cd_login/languages/czech.php</filename>
+    <filename>mod_cd_login/languages/english.php</filename>
+    <filename>mod_cd_login/languages/french.php</filename>
+    <filename>mod_cd_login/languages/german.php</filename>
+    <filename>mod_cd_login/languages/hrvatski.php</filename>
+    <filename>mod_cd_login/languages/index.html</filename>
+    <filename>mod_cd_login/languages/italian.php</filename>
+    <filename>mod_cd_login/languages/spanish.php</filename>
+  </files>
+  <params>
+    <param name="@spacer" type="spacer" default="	= = = Module settings = = =" label="" description="" />
+    <param name="define_links" type="list" default="0" label="Define links" description="Please define your 'New account' and 'Lost Password' links.">
+      <option value="0">Joomla!</option>
+      <option value="1">Community Builder</option>
+      <option value="2">Custom - specify bellow</option>
+    </param>
+    <param name="link_new_account" type="text" default="" label="Custom 'New account' link" description="" />
+    <param name="link_lost_password" type="text" default="" label="Custom 'Lost password' link" description="" />
+    <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+    <param name="posttext" type="textarea" cols="20" rows="5" label="Post-text" description="This is the Text or HTML that is displayed below the login form" />
+    <param name="login" type="text" default="" label="Login Redirection URL" description="What page will the login redirect to after login, if let blank will load front page" />
+    <param name="logout" type="text" default="" label="Logout Redirection URL" description="What page will the login redirect to after login, if let blank will load front page" />
+    <param name="login_message" type="radio" default="0" label="Login Message" description="Show/Hide the javascript Pop-up indicating Login Success">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="logout_message" type="radio" default="0" label="Logout Message" description="Show/Hide the javascript Pop-up indicating Logout Success">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="greeting" type="radio" default="1" label="Greeting" description="Show/Hide the simple greeting text">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="name" type="list" default="0" label="Name/Username">
+      <option value="0">Username</option>
+      <option value="1">Name</option>
+    </param>
+    <param name="@spacer" type="spacer" default="	= = = Highslide settings = = =" label="" description="" />
+    <param name="cd_login_border" type="list" default="0" label="Display border">
+      <option value="none">None</option>
+      <option value="top">Top</option>
+      <option value="bottom">Bottom</option>
+      <option value="both">Both</option>
+    </param>
+    <param name="outlineType" type="list" default="rounded-white" label="Rounded" description="Official reference: The outline type refers to PNG graphics within the outlines directory. These graphic outlines appear outside the CSS border after the image is fully expanded.">
+  	<option value="rounded-white">rounded-white</option>
+  	<option value="rounded-black">rounded-black</option>
+  	<option value="glossy-dark">glossy-dark</option>
+  	<option value="beveled">beveled</option>
+  	<option value="drop-shadow">drop-shadow</option>
+  	<option value="outer-glow">outer-glow</option>
+    </param>
+    <param name="anchor" type="list" default="auto" label="Anchor" description="Official reference: The default setting is 'auto', which means the image tries to expand equally in all directions, but moves and/or contracts if it exceeds the client area.">
+  	<option value="auto">auto</option>
+  	<option value="top">top</option>
+  	<option value="top-right">top right</option>
+  	<option value="right">right</option>
+  	<option value="bottom right">bottom right</option>
+  	<option value="bottom">bottom</option>
+  	<option value="bottom left">bottom left</option>
+  	<option value="left">left</option>
+  	<option value="top left">top left</option>
+  </param>
+    <param name="align" type="list" default="auto" label="Align" description="Official reference: Position of the full image in the client.">
+  	<option value="auto">auto</option>
+  	<option value="center">center</option>
+  </param>
+  <param name="dimmingOpacity" type="text" default="0" label="Dimming Opacity" description="Official reference: The dimmingOpacity property creates the popular Lightbox darkening/lightening background effect. Setting dimmingOpacity to 0 disables the effect." />
+	<param name="@spacer" type="spacer" default="= = = Other settings = = =" label="" description="" />
+    <param name="cd_poweredby" type="radio" default="1" label="Display author" description="">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+  </params>
+</mosinstall>

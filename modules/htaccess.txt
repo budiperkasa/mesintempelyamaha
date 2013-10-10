@@ -1,0 +1,5 @@
+########## Bitte in Ihrer .htaccess Datei einfügen, SEF Joomla Funktion muss aktiviert sein!
+########## Hinter dieser Zeile einfügen -- > Begin - Joomla! core SEF Section
+
+
+RewriteRule ^tags/(.*)/ index.php?searchword=$1&option=com_search [QSA,NC]

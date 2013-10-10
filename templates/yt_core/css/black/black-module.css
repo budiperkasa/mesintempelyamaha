@@ -1,0 +1,56 @@
+/* top modules */
+#top div.moduletable {
+	background: #323232 url(../../images/black/top_module_bg.png) 0 100% repeat-x;
+	border: 1px solid #646464;
+}
+
+#top div.moduletable:hover {
+	background: #464646 url(../../images/black/top_module_hover.png) 0 100% repeat-x;
+}
+
+/* left modules */
+/* white */
+#left div.moduletable, #left div.moduletable-lightgrey, #left div.moduletable-darkgrey, #left div.moduletable-black {
+	background: #323232 url(../../images/black/left_module_bg.png) 0 100% repeat-x;
+	border: 1px solid #787878;
+}
+
+/* lightgrey */
+#left div.moduletable-lightgrey {
+	background: #6e6e6e url(../../images/black/left_module_bg_lightgrey.png) 0 100% repeat-x;
+	border: 1px solid #c8c8c8;
+	color: #ffffff;
+}
+
+/* darkgrey */
+#left div.moduletable-darkgrey {
+	background: #505050 url(../../images/black/left_module_bg_darkgrey.png) 0 100% repeat-x;
+	border: 1px solid #969696;
+	color: #c8c8c8;
+}
+
+/* black */
+#left div.moduletable-black {
+	background: #141414 url(../../images/black/left_module_bg_black.png) 0 100% repeat-x;
+	border: 1px solid #3c3c3c;
+	color: #969696;
+}
+
+/* maintopbox & mainbottombox modules */
+/* white */
+.maintopbox div.moduletable, .mainbottombox div.moduletable {
+	background: #1e1e1e;
+	border: 1px solid #646464;
+}
+
+/* right modules */
+#right div.moduletable {
+	background: #1e1e1e;
+	border: 1px solid #646464;
+}
+
+/* contenttop modules */
+#contenttop div.moduletable, #contentbottom div.moduletable {
+	background: #1e1e1e;
+	border: 1px solid #646464;
+}

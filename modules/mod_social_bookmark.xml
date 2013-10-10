@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.8">
+  <name>Social Bookmark</name>
+  <creationDate>January 2008</creationDate>
+  <author>Alexander Hadj Hassine</author>
+  <authorEmail>info@social-bookmark-script.de</authorEmail>
+  <authorUrl>http://www.social-bookmark-script.de/</authorUrl>
+  <copyright>(C) 2008 by Alexander Hadj Hassine</copyright>
+  <license>GNU/GPL</license>
+  <version>1.9</version>
+  <description>
+  <![CDATA[
+  <img src="/modules/mod_social_bookmark/logo.gif" alt="Social Bookmark Script"/><br/>
+  <h3 style="padding:0;margin:0">Social Bookmark Script</h3>
+  Social bookmark link icons with 41 social bookmark services, all individually selectablly.<br/><br/>
+    <h4 style="padding:0;margin:0">New in version 1.9</h4>
+	- Add services: Kledy.de, Jumptags.com and Upchuckr.com.<br/>
+	<h4 style="padding:0;margin:0">Changes</h4>
+	- Add new icon for Mister Wong<br/>
+	- Fix error on spurl.<br/>
+	- Fix error by setting special TLD.<br/>
+  	<h4 style="padding:0;margin:0">General features</h4>
+	- Set special TLD of services.<br/>
+	- Automated generate description and tags.<br/>
+	- Alt image text assignable (Multilanguage).<br/>
+  	- Multiple style and format options.<br/>
+  	- Valid XHTML.<br/><br/>
+  If you miss a social bookmark service or want a feature send a message to:<br/>
+  <a href="mailto:info@social-bookmark-script.de">info@social-bookmark-script.de</a>.<br/><br/>
+  Author website:<br/>
+  <a href="http://www.social-bookmark-script.de/" target="_Blank">http://www.social-bookmark-script.de/</a><br/>
+  <a href="http://www.social-bookmark-script.com/" target="_Blank">http://www.social-bookmark-script.com/</a>
+  ]]>
+  </description>
+  <files>
+    <filename module="mod_social_bookmark">mod_social_bookmark.php</filename>
+	<filename>mod_social_bookmark/load.gif</filename>
+	<filename>mod_social_bookmark/logo.gif</filename>
+	
+	<filename>mod_social_bookmark/blinklist.gif</filename>
+	<filename>mod_social_bookmark/blinklist_trans.gif</filename>
+	<filename>mod_social_bookmark/blinklist_ani.gif</filename>
+	<filename>mod_social_bookmark/blinklist_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/del.gif</filename>
+	<filename>mod_social_bookmark/del_trans.gif</filename>
+	<filename>mod_social_bookmark/del_ani.gif</filename>
+	<filename>mod_social_bookmark/del_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/webnews.gif</filename>
+	<filename>mod_social_bookmark/webnews_trans.gif</filename>
+	<filename>mod_social_bookmark/webnews_ani.gif</filename>
+	<filename>mod_social_bookmark/webnews_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/icio.gif</filename>
+	<filename>mod_social_bookmark/icio_trans.gif</filename>
+	<filename>mod_social_bookmark/icio_ani.gif</filename>
+	<filename>mod_social_bookmark/icio_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/oneview.gif</filename>
+	<filename>mod_social_bookmark/oneview_trans.gif</filename>
+	<filename>mod_social_bookmark/oneview_ani.gif</filename>
+	<filename>mod_social_bookmark/oneview_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/digg.gif</filename>
+	<filename>mod_social_bookmark/digg_trans.gif</filename>
+	<filename>mod_social_bookmark/digg_ani.gif</filename>
+	<filename>mod_social_bookmark/digg_trans_ani.gif</filename>
+
+	<filename>mod_social_bookmark/boni.gif</filename>
+	<filename>mod_social_bookmark/boni_trans.gif</filename>
+	<filename>mod_social_bookmark/boni_ani.gif</filename>
+	<filename>mod_social_bookmark/boni_trans_ani.gif</filename>
+
+	<filename>mod_social_bookmark/power.gif</filename>
+	<filename>mod_social_bookmark/power_trans.gif</filename>
+	<filename>mod_social_bookmark/power_ani.gif</filename>
+	<filename>mod_social_bookmark/power_trans_ani.gif</filename>
+
+	<filename>mod_social_bookmark/favoriten.gif</filename>
+	<filename>mod_social_bookmark/favoriten_trans.gif</filename>
+	<filename>mod_social_bookmark/favoriten_ani.gif</filename>
+	<filename>mod_social_bookmark/favoriten_trans_ani.gif</filename>
+
+	<filename>mod_social_bookmark/bookmarkscc.gif</filename>
+	<filename>mod_social_bookmark/bookmarkscc_trans.gif</filename>
+	<filename>mod_social_bookmark/bookmarkscc_ani.gif</filename>
+	<filename>mod_social_bookmark/bookmarkscc_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/kledy.gif</filename>
+	<filename>mod_social_bookmark/kledy_trans.gif</filename>
+	<filename>mod_social_bookmark/kledy_ani.gif</filename>
+	<filename>mod_social_bookmark/kledy_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/jumptags.gif</filename>
+	<filename>mod_social_bookmark/jumptags_trans.gif</filename>
+	<filename>mod_social_bookmark/jumptags_ani.gif</filename>
+	<filename>mod_social_bookmark/jumptags_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/upchuckr.gif</filename>
+	<filename>mod_social_bookmark/upchuckr_trans.gif</filename>
+	<filename>mod_social_bookmark/upchuckr_ani.gif</filename>
+	<filename>mod_social_bookmark/upchuckr_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/stumbleupon.gif</filename>
+	<filename>mod_social_bookmark/stumbleupon_trans.gif</filename>
+	<filename>mod_social_bookmark/stumbleupon_ani.gif</filename>
+	<filename>mod_social_bookmark/stumbleupon_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/slashdot.gif</filename>
+	<filename>mod_social_bookmark/slashdot_trans.gif</filename>
+	<filename>mod_social_bookmark/slashdot_ani.gif</filename>
+	<filename>mod_social_bookmark/slashdot_trans_ani.gif</filename>
+
+	<filename>mod_social_bookmark/netscape.gif</filename>
+	<filename>mod_social_bookmark/netscape_trans.gif</filename>
+	<filename>mod_social_bookmark/netscape_ani.gif</filename>
+	<filename>mod_social_bookmark/netscape_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/folkd.gif</filename>
+	<filename>mod_social_bookmark/folkd_trans.gif</filename>
+	<filename>mod_social_bookmark/folkd_ani.gif</filename>
+	<filename>mod_social_bookmark/folkd_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/furl.gif</filename>
+	<filename>mod_social_bookmark/furl_trans.gif</filename>
+	<filename>mod_social_bookmark/furl_ani.gif</filename>
+	<filename>mod_social_bookmark/furl_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/google.gif</filename>
+	<filename>mod_social_bookmark/google_trans.gif</filename>
+	<filename>mod_social_bookmark/google_ani.gif</filename>
+	<filename>mod_social_bookmark/google_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/linkarena.gif</filename>
+	<filename>mod_social_bookmark/linkarena_trans.gif</filename>
+	<filename>mod_social_bookmark/linkarena_ani.gif</filename>
+	<filename>mod_social_bookmark/linkarena_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/reddit.gif</filename>
+	<filename>mod_social_bookmark/reddit_trans.gif</filename>
+	<filename>mod_social_bookmark/reddit_ani.gif</filename>
+	<filename>mod_social_bookmark/reddit_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/spurl.gif</filename>
+	<filename>mod_social_bookmark/spurl_trans.gif</filename>
+	<filename>mod_social_bookmark/spurl_ani.gif</filename>
+	<filename>mod_social_bookmark/spurl_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/wong.gif</filename>
+	<filename>mod_social_bookmark/wong_trans.gif</filename>
+	<filename>mod_social_bookmark/wong_ani.gif</filename>
+	<filename>mod_social_bookmark/wong_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/yahoo.gif</filename>
+	<filename>mod_social_bookmark/yahoo_trans.gif</filename>
+	<filename>mod_social_bookmark/yahoo_ani.gif</filename>
+	<filename>mod_social_bookmark/yahoo_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/yigg.gif</filename>
+	<filename>mod_social_bookmark/yigg_trans.gif</filename>
+	<filename>mod_social_bookmark/yigg_ani.gif</filename>
+	<filename>mod_social_bookmark/yigg_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/blogmarks.gif</filename>
+	<filename>mod_social_bookmark/blogmarks_trans.gif</filename>
+	<filename>mod_social_bookmark/blogmarks_ani.gif</filename>
+	<filename>mod_social_bookmark/blogmarks_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/ma.gnolia.gif</filename>
+	<filename>mod_social_bookmark/ma.gnolia_trans.gif</filename>
+	<filename>mod_social_bookmark/ma.gnolia_ani.gif</filename>
+	<filename>mod_social_bookmark/ma.gnolia_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/smarking.gif</filename>
+	<filename>mod_social_bookmark/smarking_trans.gif</filename>
+	<filename>mod_social_bookmark/smarking_ani.gif</filename>
+	<filename>mod_social_bookmark/smarking_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/netvouz.gif</filename>
+	<filename>mod_social_bookmark/netvouz_trans.gif</filename>
+	<filename>mod_social_bookmark/netvouz_ani.gif</filename>
+	<filename>mod_social_bookmark/netvouz_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/technorati.gif</filename>
+	<filename>mod_social_bookmark/technorati_trans.gif</filename>
+	<filename>mod_social_bookmark/technorati_ani.gif</filename>
+	<filename>mod_social_bookmark/technorati_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/newsvine.gif</filename>
+	<filename>mod_social_bookmark/newsvine_trans.gif</filename>
+	<filename>mod_social_bookmark/newsvine_ani.gif</filename>
+	<filename>mod_social_bookmark/newsvine_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/blinkbits.gif</filename>	
+	<filename>mod_social_bookmark/blinkbits_trans.gif</filename>
+	<filename>mod_social_bookmark/blinkbits_ani.gif</filename>
+	<filename>mod_social_bookmark/blinkbits_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/diigo.gif</filename>
+	<filename>mod_social_bookmark/diigo_trans.gif</filename>
+	<filename>mod_social_bookmark/diigo_ani.gif</filename>
+	<filename>mod_social_bookmark/diigo_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/simpy.gif</filename>
+	<filename>mod_social_bookmark/simpy_trans.gif</filename>
+	<filename>mod_social_bookmark/simpy_ani.gif</filename>
+	<filename>mod_social_bookmark/simpy_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/newsider.gif</filename>
+	<filename>mod_social_bookmark/newsider_trans.gif</filename>
+	<filename>mod_social_bookmark/newsider_ani.gif</filename>
+	<filename>mod_social_bookmark/newsider_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/seekxl.gif</filename>
+	<filename>mod_social_bookmark/seekxl_trans.gif</filename>
+	<filename>mod_social_bookmark/seekxl_ani.gif</filename>
+	<filename>mod_social_bookmark/seekxl_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/newskick.gif</filename>
+	<filename>mod_social_bookmark/newskick_trans.gif</filename>
+	<filename>mod_social_bookmark/newskick_ani.gif</filename>
+	<filename>mod_social_bookmark/newskick_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/favit.gif</filename>
+	<filename>mod_social_bookmark/favit_trans.gif</filename>
+	<filename>mod_social_bookmark/favit_ani.gif</filename>
+	<filename>mod_social_bookmark/favit_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/sbdk.gif</filename>
+	<filename>mod_social_bookmark/sbdk_trans.gif</filename>
+	<filename>mod_social_bookmark/sbdk_ani.gif</filename>
+	<filename>mod_social_bookmark/sbdk_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/linksilo.gif</filename>
+	<filename>mod_social_bookmark/linksilo_trans.gif</filename>
+	<filename>mod_social_bookmark/linksilo_ani.gif</filename>
+	<filename>mod_social_bookmark/linksilo_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/readster.gif</filename>
+	<filename>mod_social_bookmark/readster_trans.gif</filename>
+	<filename>mod_social_bookmark/readster_ani.gif</filename>
+	<filename>mod_social_bookmark/readster_trans_ani.gif</filename>
+	
+	<filename>mod_social_bookmark/what.gif</filename>
+	<filename>mod_social_bookmark/what_trans.gif</filename>
+	<filename>mod_social_bookmark/what_ani.gif</filename>
+	<filename>mod_social_bookmark/what_trans_ani.gif</filename>
+  </files>
+  <params>
+  <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling"></param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	<param name="wong" type="list" default='1' label="Mr. Wong (Ger./Eng./Chi./Esp./Fra./Rus.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="wongl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="webnews" type="list" default='1' label="Webnews (Ger.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="webnewsl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="iciode" type="list" default='1' label="Icio (Ger.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="iciodel" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="oneview" type="list" default='1' label="Oneview (Ger.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="oneviewl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="seekxl" type="list" default='1' label="Seekxl (Ger.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="seekxll" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="favoriten" type="list" default='1' label="Favoriten.de (Ger.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="favoritenl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="kledy" type="list" default='1' label="Kledy (Ger.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="kledyl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="favit" type="list" default='1' label="FAV!T (Ger.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="favitl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="sbdk" type="list" default='1' label="SB DK (Ger.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="sbdkl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="boni" type="list" default='1' label="BoniTrust (Ger.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="bonil" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="power" type="list" default='1' label="Power-Oldie (Ger./Eng.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="powerl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="newskick" type="list" default='1' label="Newskick (Ger.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="newskickl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="bookmarkscc" type="list" default='1' label="Bookmarks.cc (Ger.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="bookmarksccl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="newsider" type="list" default='1' label="Newsider (Ger.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="newsiderl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="linksilo" type="list" default='1' label="Linksilo (Ger.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="linksilol" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="readster" type="list" default='1' label="Readster (Ger.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="readsterl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="yigg" type="list" default='1' label="Yigg (Ger.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="yiggl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="linkarena" type="list" default='1' label="Linkarena (Ger./Eng.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="linkarenal" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="icio" type="list" default='1' label="Del.icio.us (Eng.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="iciol" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="digg" type="list" default='1' label="Digg (Eng.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="diggl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="reddit" type="list" default='1' label="Reddit (Eng.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="redditl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	
+		<param name="jumptags" type="list" default='1' label="Jumptags (Eng.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="jumptagsl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+		<param name="upchuckr" type="list" default='1' label="Upchuckr (Eng.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="upchuckrl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="simpy" type="list" default='1' label="Simpy (Ger./Eng.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="simpyl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="stumbleupon" type="list" default='1' label="StumbleUpon (Eng.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="stumbleuponl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="slashdot" type="list" default='1' label="Slashdot (Eng.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="slashdotl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="netscape" type="list" default='1' label="Netscape (Eng.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="netscapel" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="furl" type="list" default='1' label="Furl (Eng.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="furll" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="yahoo" type="list" default='1' label="Yahoo (Eng.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="yahool" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="blogmarks" type="list" default='1' label="Blogmarks (Eng.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="blogmarksl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="diigo" type="list" default='1' label="Diigo (Eng.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="diigol" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="technorati" type="list" default='1' label="Technorati (Eng.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="technoratil" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="newsvine" type="list" default='1' label="Newsvine (Eng.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="newsvinel" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="blinkbits" type="list" default='1' label="Blinkbits (Eng.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="blinkbitsl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="magnolia" type="list" default='1' label="Ma.Gnolia (Eng.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="magnolial" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="smarking" type="list" default='1' label="Smarking (Eng./Ita.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="smarkingl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="netvouz" type="list" default='1' label="Netvouz (Eng./Swe.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="netvouzl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="folkd" type="list" default='1' label="Folkd (Ger./Eng./Spa./Fra.)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="folkdl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="spurl" type="list" default='1' label="Spurl (Multilanguage)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="spurl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="google" type="list" default='1' label="Google (Multilanguage)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="googlel" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="blinklist" type="list" default='1' label="Blinklist (Multilanguage)" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	<param name="blinklistl" type="text" default='' label="If you don't want use default domain, example: .com " description="If you don't want use default domain, example: .com. Please note that the special domain must exist!">
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+	
+	<param name="what" type="list" default='1' label="Display information icon." description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+		<param name="whatlink" type="text" size="60" default="http://en.wikipedia.org/wiki/Social_Bookmarking" label="Link to external or internal infopage." description="Link to external or internal infopage.">
+	</param>
+		<param name="linktype" type="list" default='1' label="External or internal link." description="External or internal link.">
+		<option value='1'>External</option>
+		<option value='2'>Internal</option>
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="">
+	</param>
+		<param name="align" type="list" default='Left' label="Align" description="">
+		<option value='left'>Left</option>
+		<option value='center'>Center</option>
+		<option value='right'>Right</option>
+	</param>
+	<param name="padding" type="text" default='0' label="Padding" description="">
+	</param>
+	
+		<param name="style" type="list" default='1' label="Icon style" description="">
+		<option value='1'>Transparent</option>
+		<option value='2'>Border</option>
+	</param>
+	<param name="ani" type="list" default='1' label="Animated Icons" description="">
+		<option value='1'>Yes</option>
+		<option value='2'>No</option>
+	</param>
+	
+	<param name="alt" type="text" default="Add to:" label="Alternative text for HTML img tag" description="Alternative text for HTML img tag">
+	</param>
+</params>
+</mosinstall>

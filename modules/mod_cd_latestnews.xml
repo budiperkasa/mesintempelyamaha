@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mosinstall type="module" version="1.0.1">
+  <name>Core Design Latest News module</name>
+  <author>Daniel Rataj</author>
+  <creationDate>March 10th, 2008</creationDate>
+  <copyright>(C) 2007 GreatJoomla.com</copyright>
+  <license><license>Attribution-NonCommercial 3.0 Unported</license></license>
+  <authorEmail>info@greatjoomla.com</authorEmail>
+  <authorUrl>www.greatjoomla.com</authorUrl>
+  <version>1.0.4</version>
+  <description>
+    <![CDATA[<h2 style="border-bottom: 1px #C64934 dotted; color: #C64934">Core Design Latest News module for Joomla! 1.0</h2>
+      <p><span style="font-weight: bold">Description:</span> Shows a list of the most recently published Items that are still current (some may have expired even though they are the most recent). Items that are displayed on the Front Page Component are not included in the list.</p>
+      <p><span style="font-weight: bold">Version:</span> 1.0.4 (released on March 10th, 2008)</p>
+      <p><span style="font-weight: bold">Author:</span> Daniel Rataj, <a href="http://www.greatjoomla.com/" title="Open in new window" target="_blank">www.greatjoomla.com</a></p>
+      <h2 style="border-bottom: 1px #C64934 dotted; color: #C64934">Important</h2>
+      <p>Require <a href="http://extensions.joomla.org/component/option,com_mtree/task,viewlink/link_id,3030/Itemid,35/" title="Open in new window" target="_blank">Core Design Scriptegrator plugin</a> !</p>
+      <h2 style="border-bottom: 1px #C64934 dotted; color: #C64934">Changelog</h2>
+      <p>Please visit our websites for more information.</p>
+      <h2 style="border-bottom: 1px #C64934 dotted; color: #C64934">Donate us</h2>
+      <p>If you like this extension please visit author's site and consider to make a donation. Thanks.</p>
+      ]]>
+  </description>
+  <files>
+    <filename module="mod_cd_latestnews">mod_cd_latestnews.php</filename>
+    <filename>mod_cd_latestnews/css/mod_cd_latestnews.css</filename>
+    <filename>mod_cd_latestnews/css/index.html</filename>
+    <filename>mod_cd_latestnews/languages/czech.php</filename>
+    <filename>mod_cd_latestnews/languages/english.php</filename>
+    <filename>mod_cd_latestnews/languages/german.php</filename>
+    <filename>mod_cd_latestnews/languages/index.html</filename>
+    <filename>mod_cd_latestnews/utils/index.html</filename>
+    <filename>mod_cd_latestnews/utils/php/functions.php</filename>
+    <filename>mod_cd_latestnews/utils/php/index.html</filename>
+    <filename>mod_cd_latestnews/index.html</filename>
+    <filename>mod_cd_latestnews/license-cc-nc.txt</filename>
+  </files>
+  <params>
+    <param name="@spacer" type="spacer" default="	= = = Display settings = = =" label="" description="" />
+    <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+    <param name="cd_latestnews_html_content_width" type="text" default="400px" label="Box width" description="Width of HTML content box - (px, em, % ...)" />
+    <param name="@spacer" type="spacer" default="	= = = Module settings = = =" label="" description="" />
+    <param name="cache" type="radio" default="0" label="Enable Cache" description="Select whether to cache the content of this module">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="type" type="list" default="0" label="Module Mode" description="Allows you to control which type of Content to display in the module">
+      <option value="1">Content Items only</option>
+      <option value="2">Static Content only</option>
+      <option value="3">Both</option>
+    </param>
+    <param name="show_front" type="radio" default="1" label="Frontpage Items" description="Show/Hide items designated for the Frontpage - only works when in Content Items only mode">
+      <option value="1">show</option>
+      <option value="0">hide</option>
+    </param>
+    <param name="count" type="text" default="5" label="Count" description="The number of items to display (default 5)" />
+    <param name="catid" type="text" default="" label="Category ID" description="Selects items from a specific Category or set of Categories (to specify more than one Category, seperate with a comma , )." />
+    <param name="secid" type="text" default="" label="Section ID" description="Selects items from a specific Secion or set of Sections (to specify more than one Section, seperate with a comma , )." />
+    <param name="cd_latestnews_set_title" type="list" default="title" label="Set title" description="Set title">
+      <option value="title">Title</option>
+      <option value="title_alias">Title alias</option>
+    </param>
+	<param name="cd_latestnews_titlelimit" type="text" default="0" label="Title limit" description="Characters limit for title. Set zero (0) to disable." />
+    <param name="@spacer" type="spacer" default="	= = = Highslide settings = = =" label="" description="" />
+    <param name="outlineType" type="list" default="rounded-white" label="Rounded" description="Official reference: The outline type refers to PNG graphics within the outlines directory. These graphic outlines appear outside the CSS border after the image is fully expanded.">
+  	<option value="rounded-white">rounded-white</option>
+  	<option value="rounded-black">rounded-black</option>
+  	<option value="glossy-dark">glossy-dark</option>
+  	<option value="beveled">beveled</option>
+  	<option value="drop-shadow">drop-shadow</option>
+  	<option value="outer-glow">outer-glow</option>
+    </param>
+    <param name="anchor" type="list" default="auto" label="Anchor" description="Official reference: The default setting is 'auto', which means the image tries to expand equally in all directions, but moves and/or contracts if it exceeds the client area.">
+  	<option value="auto">auto</option>
+  	<option value="top">top</option>
+  	<option value="top-right">top right</option>
+  	<option value="right">right</option>
+  	<option value="bottom right">bottom right</option>
+  	<option value="bottom">bottom</option>
+  	<option value="bottom left">bottom left</option>
+  	<option value="left">left</option>
+  	<option value="top left">top left</option>
+  </param>
+    <param name="align" type="list" default="auto" label="Align" description="Official reference: Position of the full image in the client.">
+  	<option value="auto">auto</option>
+  	<option value="center">center</option>
+  </param>
+  <param name="dimmingOpacity" type="text" default="0" label="Dimming Opacity" description="Official reference: The dimmingOpacity property creates the popular Lightbox darkening/lightening background effect. Setting dimmingOpacity to 0 disables the effect." />
+    <param name="@spacer" type="spacer" default="= = = Other settings = = =" label="" description="" />
+    <param name="cd_poweredby" type="radio" default="1" label="Display author" description="">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+  </params>
+</mosinstall>

@@ -1,0 +1,80 @@
+/* CSS style - Core Design Scriptegrator plugin for Joomla! 1.0 */
+
+/* Default */
+.highslide-dimming {
+	background: white;
+	position: absolute;
+	width: 100%;
+	visibility: hidden;
+}
+a.highslide-loading {
+}
+.highslide-html {
+    background-color: white;
+}
+.highslide-html-blur {
+}
+.highslide-html-content-header {
+	height: 20px;
+	padding: 2px;
+}
+.highslide-html-content {
+	position: absolute;
+    display: none;
+}
+.highslide-body {
+	padding: 0 10px 10px 10px;
+}
+.highslide-display-block {
+    display: block;
+}
+.highslide-display-none {
+    display: none;
+}
+.highslide-move {
+    cursor: move;
+	 border: 0;
+	 height: 18px;
+	 padding: 2px;
+}
+a.control {
+	float: right;
+    display: block;
+    /*position: relative;*/
+	margin: 0 5px;
+	font-size: 9pt;
+    font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #999 !important;
+}
+a.control:hover {
+	color: black !important;
+}
+
+a.highslide-credits,
+a.highslide-credits i {
+    padding: 2px;
+    color: silver;
+    text-decoration: none;
+	font-size: 10px;
+}
+a.highslide-credits:hover,
+a.highslide-credits:hover i {
+    color: white;
+    background-color: gray;
+}
+
+/* End */
+
+/* Powered by style */
+div.cd_core_design_poweredby {
+	font-size: 10px;
+	text-align: center;
+	color: #A9A9A9;
+}
+div.cd_core_design_poweredby a, div.cd_core_design_poweredby a:hover {
+	color: #A9A9A9 !important;
+	text-decoration: none;
+}
+/* End */

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jpconfig type="installpack">
+	<name>Joomla! 1.0.11 modified installer</name>
+	<package>jp1011.tar.gz</package>
+	<filelist>
+		<filename>common.php</filename>
+		<filename>configuration.php-dist</filename>
+		<filename>gpl.html</filename>
+		<filename>header_bg.png</filename>
+		<filename>header_install.png</filename>
+		<filename>header_version.png</filename>
+		<filename>index.php</filename>
+		<filename>install1.php</filename>
+		<filename>install2.php</filename>
+		<filename>install3.php</filename>
+		<filename>install4.php</filename>
+		<filename>install.css</filename>
+		<filename>install_logo.png</filename>
+		<filename>install.php</filename>
+		<filename>sql/drop_table.sql</filename>
+		<filename>sql/migrate_Mambo4523_to_Joomla_100.sql</filename>
+	</filelist>
+	<sqldump mode="split">
+		<basedump>joomla.sql</basedump>
+		<sampledump>sample_data.sql</sampledump>
+	</sqldump>
+</jpconfig>

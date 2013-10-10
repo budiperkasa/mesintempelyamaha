@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="component" version="4.5.2">
+	<name>Tag</name>
+	<author>Gabiriele Lalasava</author>
+	<copyright>(C) fijiwebdesign.com</copyright>
+	<license>http://www.fijiwebdesign.com/</license>
+	<authorEmail>gabe@fijiwebdesign.com</authorEmail>
+	<authorUrl>www.fijiwebdesign.com</authorUrl>
+	<version>0.5</version>
+	<creationDate>April 22nd 2007</creationDate>
+	<description><![CDATA[
+	<p>Allows your website users to add tags to your Joomla Content Items.</p>
+	]]></description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Menu Image" description="A small image to be placed to the left or right of your menu item, images must be in images/stories/" />
+		<param name="pageclass_sfx" type="text" default="" label="Page Class Suffix" description="A suffix to be applied to the css classes of the page, this allows individual page styling" />
+		<param name="back_button" type="list" default="" label="Back Button" description="Show/Hide a Back Button, that returns you to the previously view page">
+			<option value="">Use Global</option>
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_page_title" type="radio" default="1" label="Page Title" description="Show/Hide the pages Title">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="page_title" type="text" size="30" default="" label="Page Title" description="Text to display at the top of the page. If left blank, the default Configuration or the Menu name will be used instead" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="show_related_tags" type="radio" default="1" label="Show Related Tags" description="Show/Hide the tags related to the Content Items displayed.">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+	</params>
+	<files>		
+<filename>css/tag.global.css</filename>
+<filename>images/icons/rss.png</filename>
+<filename>images/icons/rss_add.png</filename>
+<filename>images/icons/rss_delete.png</filename>
+<filename>images/icons/rss_go.png</filename>
+<filename>images/icons/tag_blue.png</filename>
+<filename>images/icons/tag_blue_add.png</filename>
+<filename>images/icons/tag_blue_delete.png</filename>
+<filename>images/icons/tag_blue_edit.png</filename>
+<filename>images/icons/tag_green.png</filename>
+<filename>images/icons/tag_orange.png</filename>
+<filename>images/icons/tag_pink.png</filename>
+<filename>images/icons/tag_purple.png</filename>
+<filename>images/icons/tag_red.png</filename>
+<filename>images/icons/tag_yellow.png</filename>
+<filename>images/loading.gif</filename>
+<filename>images/rsslogo.jpg</filename>
+<filename>includes/fwd.class.php</filename>
+<filename>includes/json.pear.php</filename>
+<filename>js/fwd.common.js</filename>
+<filename>js/fwd.event.js</filename>
+<filename>js/fwd.xhr.js</filename>
+<filename>js/ie_pngfix.js</filename>
+<filename>js/tag.configs.php</filename>
+<filename>js/tag.functions.js</filename>
+<filename>js/tag.reltags.js</filename>
+<filename>tag.api.php</filename>
+<filename>tag.class.php</filename>
+<filename>tag.config.php</filename>
+<filename>tag.html.php</filename>
+<filename>tag.php</filename>
+<filename>tag.tasks.php</filename>
+<filename>tmpl/tag.html.php</filename>
+<filename>tmpl/tag.json.php</filename>
+<filename>tmpl/tag.rss20.php</filename>
+<filename>tmpl/tag.xhtml.php</filename>
+<filename>tmpl/tag.xml.php</filename>
+<filename>sef_ext.php</filename>
+	</files>
+	<install>
+	<queries>
+		<query>
+CREATE TABLE `#__tag` (
+  `id` int(11) NOT NULL auto_increment,
+  `tag` varchar(25) collate utf8_bin NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `create_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `cid` int(11) NOT NULL,
+  `published` tinyint(1) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=0  DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+		</query>
+		<query>
+CREATE TABLE `#__tag_config` (
+  `id` int(11) NOT NULL auto_increment,
+  `name` varchar(20) collate utf8_bin NOT NULL,
+  `label` varchar(100) collate utf8_bin NOT NULL,
+  `value` varchar(200) collate utf8_bin NOT NULL,
+  `type` varchar(3) collate utf8_bin NOT NULL,
+  `range` mediumtext collate utf8_bin NOT NULL,
+  `desc` mediumtext collate utf8_bin NOT NULL,
+  `namespace` varchar(20) collate utf8_bin NOT NULL,
+  `tabid` tinyint(2) NOT NULL,
+  `html` varchar(20) collate utf8_bin NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+		</query>
+		<query>
+INSERT INTO `#__tag_config` (`id`, `name`, `label`, `value`, `type`, `range`, `desc`, `namespace`, `tabid`, `html`) VALUES (1, 0x6164645f62746e5f747874, 0x41646420427574746f6e2054657874, 0x53617665, 0x737472, '', 0x546865206c6162656c206f662074686520627574746f6e20746f20636c69636b20746f207361766520746865207461677320696e70757474656420627920757365722e20, 0x636f6e666967, 1, 0x696e707574626f78),
+(2, 0x6164645f6c696e6b5f747874, 0x4164642054616773204c696e6b2054657874, 0x4164642054616773, 0x737472, '', 0x546865206c6162656c206f6620746865204c696e6b207468617420697320636c69636b656420746f206164642074616773202873686f77732074686520616464207461677320666f726d292e, 0x636f6e666967, 1, 0x696e707574626f78),
+(3, 0x746167735f736570, 0x5461677320536570657261746f72, 0x2c20, 0x737472, '', 0x54686520536570617261746f72206265747765656e20696e646976696475616c20746167732e2065673a206120636f6d6d6120282c20292e20, 0x636f6e666967, 1, 0x696e707574626f78),
+(4, 0x64656661756c745f616374, 0x44656661756c7420416374696f6e, 0x636c6f7564, 0x737472, '', 0x5468652064656661756c7420616374696f6e20746f20646f20696620746865726520617265206e6f20616374696f6e732072657175657374656420666f722074686520636f6d5f7461677320636f6d706f6e656e742e2042792064656661756c742c20746869732069732073657420746f2022636c6f756422207768696368206d65616e73207468617420696e6465782e7068703f6f7074696f6e3d636f6d5f7461672077696c6c2072756e3a20696e6465782e7068703f6f7074696f6e3d636f6d5f746167267461736b3d76696577266163743d636c6f7564, 0x636f6e666967, 2, 0x696e707574626f78),
+(5, 0x636c6f75645f746167735f6c696d6974, 0x436c6f75642054616773204c696d6974, 0x3230, 0x696e74, '', 0x546865206d6178696d756d206e756d626572206f66207461677320746f20646973706c617920696e2074686520636c6f756420766965772e20, 0x636f6e666967, 1, 0x696e707574626f78);
+		</query>
+		<query>
+CREATE TABLE `#__tag_tabs` (
+  `id` int(11) NOT NULL auto_increment,
+  `label` varchar(100) collate utf8_bin NOT NULL,
+  `desc` varchar(200) collate utf8_bin NOT NULL,
+  `category` varchar(20) collate utf8_bin NOT NULL,
+  `parent` int(11) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+		</query>
+		<query>
+INSERT INTO `#__tag_tabs` (`id`, `label`, `desc`, `category`, `parent`) VALUES (1, 0x5549, 0x5573657220496e746572666163652053657474696e6773, 0x636f6e666967, 0),
+(2, 0x417070, 0x4170706c69636174696f6e2053657474696e6773, 0x636f6e666967, 0);
+		</query>
+	</queries>
+	</install>
+	
+	<uninstall>
+	<queries>
+		<query>
+DROP TABLE IF EXISTS `#__tag`;
+		</query>
+		<query>
+DROP TABLE IF EXISTS `#__tag_config`;
+		</query>
+		<query>
+DROP TABLE IF EXISTS `#__tag_tabs`;
+		</query>
+	</queries>
+	</uninstall>
+	
+	<installfile>
+		<filename>install.tag.php</filename>
+	</installfile>
+	
+	<uninstallfile>
+		<filename>uninstall.tag.php</filename>
+	</uninstallfile>
+	
+	<administration>
+		<menu>Tag</menu>
+		<submenu>
+			<menu task="index">Manage Tags</menu>
+			<menu task="config">Configuration</menu>
+			<menu task="about">About Tag</menu>
+		</submenu>
+		<files>
+<filename>admin.tag.html.php</filename>
+<filename>admin.tag.json.php</filename>
+<filename>admin.tag.php</filename>
+<filename>admin.tag.tasks.php</filename>
+<filename>images/fwdlogo.jpg</filename>
+<filename>install.tag.php</filename>
+<filename>tag.xml</filename>
+<filename>toolbar.tag.html.php</filename>
+<filename>toolbar.tag.php</filename>
+<filename>uninstall.tag.php</filename>
+		</files>
+	</administration>
+</mosinstall>

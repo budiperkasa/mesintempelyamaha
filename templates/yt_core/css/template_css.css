@@ -1,0 +1,17 @@
+/* layout styling */
+@import url(layout.css);
+
+/* general tag styling */
+@import url(general.css);
+
+/* menu styling */
+@import url(menu.css);
+
+/* module styling */
+@import url(module.css);
+
+/* Joomla core styling */
+@import url(joomla.css);
+
+/* Third party extensions styling */
+@import url(extensions.css);

@@ -1,0 +1,215 @@
+div.moduletable h3,
+div.moduletable-blank h3,
+div.module h3,
+div.module-blank h3,
+div.moduletable-lightgrey h3,
+div.moduletable-darkgrey h3,
+div.moduletable-black h3 {
+	font-size: 100%;
+}
+
+/* toppanel modules */
+#toppanel div.moduletable {
+	margin: 0px 0px 10px 0px;
+}
+
+#toppanel div.moduletable h3 {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 10px 0px;
+	text-align: left;
+	font-size: 150%;
+	font-weight: bold;
+}
+
+/* top modules */
+#top div.moduletable {
+	padding: 10px 15px 10px 15px;
+	background: url(../images/top_module_bg.png) 0 100% repeat-x;
+	border: 1px solid #c8c8c8;
+	text-align:justify;
+}
+
+#top .topboxseperator div.moduletable {
+	margin: 0px 10px 0px 0px;
+}
+
+#top div.moduletable:hover {
+	background: #ebebeb url(../images/top_module_hover.png) 0 100% repeat-x;
+}
+
+#top div.moduletable h3 {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 5px 0px;
+	text-align: center;
+	font-size: 125%;
+	font-weight: bold;
+}
+
+/* blank */
+#top div.moduletable-blank {
+	padding: 0px 0px 0px 0px;
+	background: none;
+}
+
+/* left modules */
+/* white */
+#left div.moduletable, #left div.moduletable-lightgrey, #left div.moduletable-darkgrey, #left div.moduletable-black {
+	margin: 0px 0px 15px 0px;
+	padding: 10px 10px 20px 10px;
+	width: 158px;
+	background: url(../images/left_module_bg.png) 0 100% repeat-x;
+	border: 1px solid #c8c8c8;
+	overflow: hidden;
+}
+
+#left div.moduletable h3, #left div.moduletable-lightgrey h3, #left div.moduletable-darkgrey h3, #left div.moduletable-black h3 {
+	margin: 0px 0px 5px 0px;
+	padding: 0px 0px 0px 0px;
+	height: 15px;
+	line-height: 10px;
+	text-align: left;
+	font-weight: bold;
+}
+
+/* lightgrey */
+#left div.moduletable-lightgrey {
+	background: #f0f0f0 url(../images/left_module_bg_lightgrey.png) 0 100% repeat-x;
+	border: 1px solid #b4b4b4;
+}
+
+/* darkgrey */
+#left div.moduletable-darkgrey {
+	background: #b4b4b4 url(../images/left_module_bg_darkgrey.png) 0 100% repeat-x;
+	border: 1px solid #787878;
+	color: #4b4b4b;
+}
+
+/* black */
+#left div.moduletable-black {
+	background: #323232 url(../images/left_module_bg_black.png) 0 100% repeat-x;
+	border: 1px solid #000000;
+	color: #dcdcdc;
+}
+
+/* blank */
+#left div.moduletable-blank {
+	margin: 0px 0px 15px 0px;
+	padding: 0px 0px 0px 0px;
+	width: 180px;
+	border: none;
+	overflow: hidden;
+}
+
+/* maintopbox & mainbottombox modules */
+/* white */
+.maintopbox div.moduletable, .mainbottombox div.moduletable {
+	margin: 0px 0px 0px 0px;
+	padding: 10px 10px 10px 10px;
+	background: #ffffff;
+        border: none; /* 1px solid #c8c8c8; */
+	overflow: hidden;
+	text-align:justify;
+}
+
+#maintop .maintopboxseperator div.moduletable, #mainbottom .mainbottomboxseperator div.moduletable {
+	margin: 0px 10px 0px 0px;
+}
+
+.maintopbox div.moduletable h3, .mainbottombox div.moduletable h3 {
+	margin: 0px 0px 5px 0px;
+	padding: 0px 0px 0px 0px;
+	height: 15px;
+	line-height: 10px;
+	text-align: left;
+	font-weight: bold;
+}
+
+/* blank */
+.maintopbox div.moduletable-blank, .mainbottombox div.moduletable-blank {
+	padding: 0px 0px 0px 0px;
+	border: none;
+}
+
+/* right modules */
+#right div.moduletable {
+	margin: 0px 0px 15px 0px;
+	padding: 10px 10px 10px 10px;
+	width: 158px;
+	background: #ffffff;
+	border: 1px solid #c8c8c8;
+	overflow: hidden;
+	text-align:justify;
+}
+
+#right div.moduletable h3 {
+	margin: 0px 0px 5px 0px;
+	padding: 0px 0px 0px 0px;
+	height: 15px;
+	line-height: 10px;
+	text-align: left;
+	font-weight: bold;
+}
+
+/* contenttop modules */
+#contenttop div.moduletable, #contentbottom div.moduletable {
+	padding: 10px 10px 10px 10px;
+	background: #ffffff;
+	border: 1px solid #c8c8c8;
+	overflow: hidden;
+	text-align:justify;
+}
+
+#contenttop div.moduletable {
+	margin: 0px 0px 10px 0px;
+}
+
+#contentbottom div.moduletable {
+	margin: 10px 0px 0px 0px;
+}
+
+#contenttop .contenttopboxseperator div.moduletable {
+	margin: 0px 10px 10px 0px;
+}
+
+#contentbottom .contentbottomboxseperator div.moduletable {
+	margin: 10px 10px 0px 0px;
+}
+
+#contenttop div.moduletable h3, #contentbottom div.moduletable h3 {
+	margin: 0px 0px 5px 0px;
+	padding: 0px 0px 0px 0px;
+	height: 15px;
+	line-height: 10px;
+	text-align: left;
+	font-weight: bold;
+}
+
+/* bottom modules */
+#bottom div.moduletable {
+	padding: 10px 15px 10px 15px;
+	background: #505050 url(../images/bottom_module_bg.png) 0 100% repeat-x;
+	border: 1px solid #787878;
+	text-align: center;
+}
+
+#bottom .bottomboxseperator div.moduletable {
+	margin: 0px 10px 10px 0px;
+}
+
+#bottom div.moduletable:hover {
+	background: #646464 url(../images/bottom_module_hover.png) 0 100% repeat-x;
+}
+
+#bottom div.moduletable h3 {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 5px 0px;
+	text-align: center;
+	font-size: 125%;
+	font-weight: bold;
+}
+
+/* blank */
+#bottom div.moduletable-blank {
+	padding: 0px 0px 0px 0px;
+	background: none;
+}

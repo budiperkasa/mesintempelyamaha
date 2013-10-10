@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall version="1.0" type="template">
+	<name>GARMIN INDONESIA II</name>
+	<version>1.0.0</version>
+	<creationDate>05/18/07</creationDate>
+	<author>GARMIN INDONESIA</author>
+	<authorEmail>info@garinindonesia.com</authorEmail>
+	<authorUrl>http://www.garminindonesia.com</authorUrl>
+    <copyright>Copyright (C) 2008 Garmin Indonesia</copyright>
+    <license></license>
+	<description>
+<![CDATA[
+<h1>Core</h1>
+
+<img src="../templates/yt_core/template_thumbnail.png" align="left" style="margin: 0px 10px 10px 0px;" />
+
+<span style="font-size: 13px;">
+Core is the June 2007 template of the YOOtheme club.
+<br /><br /><span style="color: #ff0000;"><b>NOTE: It is not free or public. This template is for members of the YOOtheme club only.</b></span>
+<br /><br />Visit YOOtheme website: <a href="http://www.yootheme.com/">http://www.yootheme.com</a>.
+<br />Visit YOOtheme demo server: <a href="http://demo.yootheme.com/">http://demo.yootheme.com</a>.
+</span>
+
+<h3 style="clear: both;">Changelog</h3>
+
+<b>1.0.0</b><br />
+<span style="margin: 0px 0px 0px 10px;">
+- Initial Release
+</span>
+<br /><br />
+
+]]>
+	</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>lib/index.html</filename>
+		<filename>lib/js/index.html</filename>
+		<filename>lib/js/x.gif</filename>
+		<filename>lib/js/yt_ie6fix.js</filename>
+		<filename>lib/js/yt_tools.js</filename>
+		<filename>lib/js/addons/index.html</filename>
+		<filename>lib/js/addons/accordionmenu.js</filename>
+		<filename>lib/js/addons/base.js</filename>
+		<filename>lib/js/addons/slidepanel.js</filename>
+		<filename>lib/js/addons/styleswitcher.js</filename>
+		<filename>lib/js/addons/tabmenu.js</filename>
+		<filename>lib/js/lightbox/index.html</filename>
+		<filename>lib/js/lightbox/slimbox.js</filename>
+		<filename>lib/js/lightbox/css/index.html</filename>
+		<filename>lib/js/lightbox/css/closelabel.gif</filename>
+		<filename>lib/js/lightbox/css/loading.gif</filename>
+		<filename>lib/js/lightbox/css/nextlabel.gif</filename>
+		<filename>lib/js/lightbox/css/prevlabel.gif</filename>
+		<filename>lib/js/lightbox/css/slimbox.css</filename>
+		<filename>lib/js/mootools/index.html</filename>
+		<filename>lib/js/mootools/mootools.js</filename>
+		<filename>lib/js/reflection/index.html</filename>
+		<filename>lib/js/reflection/reflection.js</filename>
+		<filename>lib/php/index.html</filename>
+		<filename>lib/php/yt_settings.php</filename>
+		<filename>lib/php/yt_snap.php</filename>
+		<filename>lib/php/yt_splitmenu.php</filename>
+		<filename>lib/php/yt_styleswitcher.php</filename>
+	</files>
+	<images>
+		<filename>images/index.html</filename>
+		<filename>images/arrow.png</filename>
+		<filename>images/blockquote_big_end.png</filename>
+		<filename>images/blockquote_big_start.png</filename>
+		<filename>images/blockquote_end.png</filename>
+		<filename>images/blockquote_start.png</filename>
+		<filename>images/bottom_module_bg.png</filename>
+		<filename>images/bottom_module_hover.png</filename>
+		<filename>images/div_alert.png</filename>
+		<filename>images/div_download.png</filename>
+		<filename>images/div_info.png</filename>
+		<filename>images/div_tip.png</filename>
+		<filename>images/em_directory.png</filename>
+		<filename>images/em_file.png</filename>
+		<filename>images/emailButton.png</filename>
+		<filename>images/left_module_bg.png</filename>
+		<filename>images/left_module_bg_black.png</filename>
+		<filename>images/left_module_bg_darkgrey.png</filename>
+		<filename>images/left_module_bg_lightgrey.png</filename>
+		<filename>images/list_arrow.png</filename>
+		<filename>images/list_arrow_big.png</filename>
+		<filename>images/list_checkbox.png</filename>
+		<filename>images/list_checkbox_big.png</filename>
+		<filename>images/list_disc.png</filename>
+		<filename>images/list_disc_big.png</filename>
+		<filename>images/login_bg.png</filename>
+		<filename>images/login_bg_hover.png</filename>
+		<filename>images/login_button.png</filename>
+		<filename>images/logo.png</filename>
+		<filename>images/logout_button.png</filename>
+		<filename>images/menu_item_l.png</filename>
+		<filename>images/menu_item_l_active.png</filename>
+		<filename>images/menu_item_l_blue.png</filename>
+		<filename>images/menu_item_l_green.png</filename>
+		<filename>images/menu_item_l_lilac.png</filename>
+		<filename>images/menu_item_l_red.png</filename>
+		<filename>images/menu_item_l_yellow.png</filename>
+		<filename>images/menu_item_r.png</filename>
+		<filename>images/menu_item_r_active.png</filename>
+		<filename>images/menu_item_r_blue.png</filename>
+		<filename>images/menu_item_r_green.png</filename>
+		<filename>images/menu_item_r_lilac.png</filename>
+		<filename>images/menu_item_r_red.png</filename>
+		<filename>images/menu_item_r_yellow.png</filename>
+		<filename>images/menu_overlay.png</filename>
+		<filename>images/page_bg.png</filename>
+		<filename>images/page_bg_blue.png</filename>
+		<filename>images/page_bg_footer.png</filename>
+		<filename>images/page_bg_footer_blue.png</filename>
+		<filename>images/page_bg_footer_green.png</filename>
+		<filename>images/page_bg_footer_lilac.png</filename>
+		<filename>images/page_bg_footer_red.png</filename>
+		<filename>images/page_bg_footer_yellow.png</filename>
+		<filename>images/page_bg_green.png</filename>
+		<filename>images/page_bg_lilac.png</filename>
+		<filename>images/page_bg_red.png</filename>
+		<filename>images/page_bg_yellow.png</filename>
+		<filename>images/pdf_button.png</filename>
+		<filename>images/printButton.png</filename>
+		<filename>images/search_bg.png</filename>
+		<filename>images/search_bg_hover.png</filename>
+		<filename>images/search_button.png</filename>
+		<filename>images/search_tab.png</filename>
+		<filename>images/styleswitcher_fontlarge.png</filename>
+		<filename>images/styleswitcher_fontlarge_hover.png</filename>
+		<filename>images/styleswitcher_fontmedium.png</filename>
+		<filename>images/styleswitcher_fontmedium_hover.png</filename>
+		<filename>images/styleswitcher_fontsmall.png</filename>
+		<filename>images/styleswitcher_fontsmall_hover.png</filename>
+		<filename>images/styleswitcher_widthfluid.png</filename>
+		<filename>images/styleswitcher_widthfluid_hover.png</filename>
+		<filename>images/styleswitcher_widththin.png</filename>
+		<filename>images/styleswitcher_widththin_hover.png</filename>
+		<filename>images/styleswitcher_widthwide.png</filename>
+		<filename>images/styleswitcher_widthwide_hover.png</filename>
+		<filename>images/submenu_level2_item_left.png</filename>
+		<filename>images/submenu_level2_item_left_ie6.png</filename>
+		<filename>images/submenu_level2_item_parent.png</filename>
+		<filename>images/submenu_level2_item_right.png</filename>
+		<filename>images/submenu_level2_item_right_ie6.png</filename>
+		<filename>images/submenu_level3_item_bg.png</filename>
+		<filename>images/submenu_level4_item_bg.png</filename>
+		<filename>images/submenu_level5_item_bg.png</filename>
+		<filename>images/top_module_bg.png</filename>
+		<filename>images/top_module_hover.png</filename>
+		<filename>images/topmenu_item_bg.png</filename>
+		<filename>images/toppanel_bg.png</filename>
+		<filename>images/toppanel_trigger_l.png</filename>
+		<filename>images/toppanel_trigger_m.png</filename>
+		<filename>images/toppanel_trigger_r.png</filename>
+		<filename>images/yoo_dogear.png</filename>
+		<filename>images/black/index.html</filename>
+		<filename>images/black/blockquote_big_end.png</filename>
+		<filename>images/black/blockquote_big_start.png</filename>
+		<filename>images/black/blockquote_end.png</filename>
+		<filename>images/black/blockquote_start.png</filename>
+		<filename>images/black/div_alert.png</filename>
+		<filename>images/black/div_download.png</filename>
+		<filename>images/black/div_info.png</filename>
+		<filename>images/black/div_tip.png</filename>
+		<filename>images/black/left_module_bg.png</filename>
+		<filename>images/black/left_module_bg_black.png</filename>
+		<filename>images/black/left_module_bg_darkgrey.png</filename>
+		<filename>images/black/left_module_bg_lightgrey.png</filename>
+		<filename>images/black/list_arrow.png</filename>
+		<filename>images/black/list_arrow_big.png</filename>
+		<filename>images/black/list_checkbox.png</filename>
+		<filename>images/black/list_checkbox_big.png</filename>
+		<filename>images/black/list_disc.png</filename>
+		<filename>images/black/list_disc_big.png</filename>
+		<filename>images/black/menu_item_l.png</filename>
+		<filename>images/black/menu_item_l_active.png</filename>
+		<filename>images/black/menu_item_l_blue.png</filename>
+		<filename>images/black/menu_item_l_green.png</filename>
+		<filename>images/black/menu_item_l_lilac.png</filename>
+		<filename>images/black/menu_item_l_red.png</filename>
+		<filename>images/black/menu_item_l_yellow.png</filename>
+		<filename>images/black/menu_item_r.png</filename>
+		<filename>images/black/menu_item_r_active.png</filename>
+		<filename>images/black/menu_item_r_blue.png</filename>
+		<filename>images/black/menu_item_r_green.png</filename>
+		<filename>images/black/menu_item_r_lilac.png</filename>
+		<filename>images/black/menu_item_r_red.png</filename>
+		<filename>images/black/menu_item_r_yellow.png</filename>
+		<filename>images/black/menu_overlay.png</filename>
+		<filename>images/black/page_bg.png</filename>
+		<filename>images/black/page_bg_blue.png</filename>
+		<filename>images/black/page_bg_footer.png</filename>
+		<filename>images/black/page_bg_footer_blue.png</filename>
+		<filename>images/black/page_bg_footer_green.png</filename>
+		<filename>images/black/page_bg_footer_lilac.png</filename>
+		<filename>images/black/page_bg_footer_red.png</filename>
+		<filename>images/black/page_bg_footer_yellow.png</filename>
+		<filename>images/black/page_bg_green.png</filename>
+		<filename>images/black/page_bg_lilac.png</filename>
+		<filename>images/black/page_bg_red.png</filename>
+		<filename>images/black/page_bg_yellow.png</filename>
+		<filename>images/black/search_tab.png</filename>
+		<filename>images/black/styleswitcher_fontlarge.png</filename>
+		<filename>images/black/styleswitcher_fontlarge_hover.png</filename>
+		<filename>images/black/styleswitcher_fontmedium.png</filename>
+		<filename>images/black/styleswitcher_fontmedium_hover.png</filename>
+		<filename>images/black/styleswitcher_fontsmall.png</filename>
+		<filename>images/black/styleswitcher_fontsmall_hover.png</filename>
+		<filename>images/black/styleswitcher_widthfluid.png</filename>
+		<filename>images/black/styleswitcher_widthfluid_hover.png</filename>
+		<filename>images/black/styleswitcher_widththin.png</filename>
+		<filename>images/black/styleswitcher_widththin_hover.png</filename>
+		<filename>images/black/styleswitcher_widthwide.png</filename>
+		<filename>images/black/styleswitcher_widthwide_hover.png</filename>
+		<filename>images/black/submenu_level2_item_left.png</filename>
+		<filename>images/black/submenu_level2_item_left_ie6.png</filename>
+		<filename>images/black/submenu_level2_item_parent.png</filename>
+		<filename>images/black/submenu_level2_item_right.png</filename>
+		<filename>images/black/submenu_level2_item_right_ie6.png</filename>
+		<filename>images/black/top_module_bg.png</filename>
+		<filename>images/black/top_module_hover.png</filename>
+	</images>
+	<css>
+		<filename>css/index.html</filename>
+		<filename>css/editor_content.css</filename>
+		<filename>css/extensions.css</filename>
+		<filename>css/general.css</filename>
+		<filename>css/ie6hacks.css</filename>
+		<filename>css/ie7hacks.css</filename>
+		<filename>css/iehacks.css</filename>
+		<filename>css/joomla.css</filename>
+		<filename>css/layout.css</filename>
+		<filename>css/menu.css</filename>
+		<filename>css/module.css</filename>
+		<filename>css/template_css.css</filename>
+		<filename>css/black/index.html</filename>
+		<filename>css/black/black-general.css</filename>
+		<filename>css/black/black-ie6hacks.css</filename>
+		<filename>css/black/black-joomla.css</filename>
+		<filename>css/black/black-layout.css</filename>
+		<filename>css/black/black-menu.css</filename>
+		<filename>css/black/black-module.css</filename>
+		<filename>css/black/black-template_css.css</filename>
+	</css>
+</mosinstall>

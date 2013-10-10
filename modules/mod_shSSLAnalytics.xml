@@ -1,0 +1,37 @@
+<?xml version="1.3" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+ <name>shCustomTags</name>
+ <author>Budi Perkasa R</author>
+ <creationDate>January 21,2008</creationDate>
+ <copyright>2008 Budi Perkasa R</copyright>
+ <license>GNU GPL</license>
+ <authorEmail>shumisha@gmail.com</authorEmail>
+ <authorUrl />
+ <version>0.2</version>
+ <description><![CDATA[<strong>This module allows you to insert Google Analytics tracking with auto SSL detection in your Joomla site as a module. The tracking code should be inserted just above the closing </body> tag of your page. Google recommends this location, as it will not slow down you visitor experience of your site because all the page has been loaded before the tracking code is activated. You should therefore publish this module in an appropriate position of your template. <br /> Set Display module title to <strong>no</strong> and display it on <strong>all</strong> pages.<br /> You can also force SSL or non-SSL call to Google tracker instead of automatic detection. Beware that SSL connection is always notably slower.<br />
+Based on an initial idea from http://www.budiperkasa.net.76.net<br />
+]]>
+ </description>
+ <files>
+  <filename module="mod_shSSLAnalytics">mod_shSSLAnalytics.php</filename>
+ </files>
+ <params>
+  <param name="shGADetect" type="list" default="auto"
+   label="SSL detection mode"
+   description="How should we connect to Google : SSL or non SSL ?">
+   <option value="auto">Auto detection</option>
+   <option value="SSL">Force SSL tracking</option>
+   <option value="nonSSL">Force non SSL tracking</option>
+  </param>
+  <param name="shGAUSerCode" type="text" default=""
+   label="Google Analytics code"
+   description="Your Google Analytics code. It looks like UA-123456-1. You received it from Google when signing in for the service or when you added a new site to your account. It must be different for each site, if you have several sites undergoing tracking." />
+   <param name="shGATrackScript" type="list" default="urchin"
+   label="Google Analytics Tracking script"
+   description="Google Analytics uses two kinds of tracking script, an older one called urchin.js and a more recent one called ga.js. You can see which one you are using from the script, or by using Google Analytics help.">
+   <option value="urchin">Use urchin.js script</option>
+   <option value="ga">Use ga.js script</option>
+  </param>
+  </params>
+ <uninstall />
+</mosinstall>

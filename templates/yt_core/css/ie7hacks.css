@@ -1,0 +1,8 @@
+/*
+ * IE7 Hacks
+ */
+
+/* layout */
+div#toppanel {
+	position: static;
+}

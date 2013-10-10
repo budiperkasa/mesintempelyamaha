@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template" version="1.0.0" client="administrator">
+	<name>BluePlazza Admin</name>
+	<creationDate>09/12/06</creationDate>
+	<author>TemplatePlazza</author>
+	<copyright>GNU/GPL</copyright>
+	<authorEmail>plazza@templateplazza.com</authorEmail>
+	<authorUrl>http://www.templateplazza.com</authorUrl>
+	<version>1.0</version>
+	<description>A Blue Theme BackEnd Template from TemplatePlazza.com. <br />Please visit www.templateplazza.com to get more stuff for Your Joomla Design</description>
+	<files>
+		<filename>cpanel.php</filename>
+		<filename>index.html</filename>
+		<filename>login.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>images/index.html</filename>
+		<filename>css/index.html</filename>
+		<filename>index.php</filename>
+	</files>
+	<images>
+		<filename>images/arrow.gif</filename>
+		<filename>images/shad_top.png</filename>
+		<filename>images/cp.png</filename>
+		<filename>images/bg.png</filename>
+		<filename>images/bghead.png</filename>
+		<filename>images/header_text.png</filename>
+		<filename>images/background.gif</filename>
+		<filename>images/biru.png</filename>
+		<filename>template_thumbnail.png</filename>
+	</images>
+	<css>
+		<filename>css/admin_login.css</filename>
+		<filename>css/template_css.css</filename>
+		<filename>css/theme.css</filename>
+	</css>
+</mosinstall>

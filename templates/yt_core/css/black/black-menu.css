@@ -1,0 +1,171 @@
+div#menu li {
+	background: url(../../images/black/menu_item_r.png) 100% 0 no-repeat;
+}
+
+div#menu li a {
+	background: url(../../images/black/menu_item_l.png) 0 0 no-repeat;
+	color: #c8c8c8;
+}
+
+div#menu a:link, div#menu a:visited {
+	color: #c8c8c8;
+}
+
+div#menu li a:hover {
+	color: #ffffff;
+}
+
+div#menu li.item1 {
+	background: url(../../images/black/menu_item_r_red.png) 100% 0 no-repeat;
+}
+
+div#menu li.item1 a {
+	background: url(../../images/black/menu_item_l_red.png) 0 0 no-repeat;
+}
+
+div#menu li.item2 {
+	background: url(../../images/black/menu_item_r_blue.png) 100% 0 no-repeat;
+}
+
+div#menu li.item2 a {
+	background: url(../../images/black/menu_item_l_blue.png) 0 0 no-repeat;
+}
+
+div#menu li.item3 {
+	background: url(../../images/black/menu_item_r_green.png) 100% 0 no-repeat;
+}
+
+div#menu li.item3 a {
+	background: url(../../images/black/menu_item_l_green.png) 0 0 no-repeat;
+}
+
+div#menu li.item4 {
+	background: url(../../images/black/menu_item_r_yellow.png) 100% 0 no-repeat;
+}
+
+div#menu li.item4 a {
+	background: url(../../images/black/menu_item_l_yellow.png) 0 0 no-repeat;
+}
+
+div#menu li.item5 {
+	background: url(../../images/black/menu_item_r_lilac.png) 100% 0 no-repeat;
+}
+
+div#menu li.item5 a {
+	background: url(../../images/black/menu_item_l_lilac.png) 0 0 no-repeat;
+}
+
+div#menu li.active {
+	background: url(../../images/black/menu_item_r_active.png) 100% 0 no-repeat;
+}
+
+div#menu li.active a {
+	background: url(../../images/black/menu_item_l_active.png) 0 0 no-repeat;
+	color: #ffffff;
+}
+
+/* sub menu */
+div#submenu ul {
+	background: #1e1e1e;
+}
+
+div#submenu li a, div#submenu li span {
+	color: #c8c8c8;
+}
+
+div#submenu a:link, div#submenu a:visited {
+	color: #c8c8c8;
+}
+
+div#submenu li a:hover, div#submenu li span:hover, div#submenu li span.sfhover {
+	color: #ffffff;
+}
+
+div#submenu li.level2 {
+	background: #505050 no-repeat;
+}
+
+.layoutleft div#submenu li.level2 a, .layoutleft div#submenu li.level2 span {
+	background: url(../../images/black/submenu_level2_item_left.png) 0 0 no-repeat;
+}
+
+.layoutright div#submenu li.level2 a, .layoutright div#submenu li.level2 span {
+	background: url(../../images/black/submenu_level2_item_right.png) 100% 0 no-repeat;
+}
+
+div#submenu li.parent {
+	background: #505050 url(../../images/black/submenu_level2_item_parent.png) 0 0 no-repeat;
+}
+
+div#submenu li.active, div#submenu li.active:hover {
+	background-color: #a0a0a0;
+}
+
+#left div#submenu li.level2 ul, div#submenu li.level2 li, #left div#submenu li.level2 li.active {
+	background: #1e1e1e;
+}
+
+#left div#submenu li.level2 li a:hover, #left div#submenu li.level2 li.active a:hover {
+	color: #ffffff;
+}
+
+#left div#submenu li.level3 a {
+	color: #c8c8c8;
+}
+
+#left div#submenu li.level3 a:hover {
+	background-color: #323232;
+}
+
+/* sub menu static */
+div#submenu-static ul {
+	background: #1e1e1e;
+}
+
+div#submenu-static li a, div#submenu-static li span {
+	color: #c8c8c8;
+}
+
+div#submenu-static a:link, div#submenu-static a:visited {
+	color: #c8c8c8;
+}
+
+div#submenu-static li a:hover, div#submenu-static li span:hover, div#submenu-static li span.sfhover {
+	color: #ffffff;
+}
+
+div#submenu-static li.level1 {
+	background: #505050 no-repeat;
+}
+
+.layoutleft div#submenu-static li.level1 a, .layoutleft div#submenu-static li.level1 span {
+	background: url(../../images/black/submenu_level2_item_left.png) 0 0 no-repeat;
+}
+
+.layoutright div#submenu-static li.level1 a, .layoutright div#submenu-static li.level1 span {
+	background: url(../../images/black/submenu_level2_item_right.png) 100% 0 no-repeat;
+}
+
+div#submenu-static li.parent {
+	background: #505050 url(../../images/black/submenu_level2_item_parent.png) 0 0 no-repeat;
+}
+
+div#submenu-static li.active, div#submenu-static li.active:hover {
+	background-color: #a0a0a0;
+}
+
+#left div#submenu-static li.level1 ul, div#submenu-static li.level1 li, #left div#submenu-static li.level1 li.active {
+	background: #1e1e1e;
+}
+
+#left div#submenu-static li.level1 li a:hover, #left div#submenu-static li.level1 li.active a:hover {
+	color: #ffffff;
+}
+
+#left div#submenu-static li.level2 a {
+	color: #c8c8c8;
+}
+
+#left div#submenu-static li.level2 a:hover {
+	background-color: #323232;
+}

@@ -1,0 +1,21 @@
+/*
+ * IE6 Hacks
+ */
+
+/* menu */
+/* sub menu */
+.layoutleft div#submenu li.level2 a, .layoutleft div#submenu li.level2 span {
+	background: url(../../images/black/submenu_level2_item_left_ie6.png) 0 0 no-repeat;
+}
+
+.layoutright div#submenu li.level2 a, .layoutright div#submenu li.level2 span {
+	background: url(../../images/black/submenu_level2_item_right_ie6.png) 100% 0 no-repeat;
+}
+
+.layoutleft div#submenu-static li.level1 a, .layoutleft div#submenu-static li.level1 span {
+	background: url(../../images/black/submenu_level2_item_left_ie6.png) 0 0 no-repeat;
+}
+
+.layoutright div#submenu-static li.level1 a, .layoutright div#submenu-static li.level1 span {
+	background: url(../../images/black/submenu_level2_item_right_ie6.png) 100% 0 no-repeat;
+}

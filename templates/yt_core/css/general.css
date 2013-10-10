@@ -1,0 +1,250 @@
+p {
+	margin: 1em 0;
+}
+
+td, th { 
+  padding: 1px;
+}
+
+a:link, a:visited {
+	color: #e15000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #eb7800;
+	text-decoration: underline;
+}
+
+body.red a:link, body.red a:visited { color: #dc3200; }
+body.red a:hover { color: #ff0000; }
+body.blue a:link, body.blue a:visited { color: #005ab4; }
+body.blue a:hover { color: #00aaff; }
+body.green a:link, body.green a:visited { color: #46821e; }
+body.green a:hover { color: #64c832; }
+body.yellow a:link, body.yellow a:visited { color: #ff6400; }
+body.yellow a:hover { color: #ffa000; }
+body.lilac a:link, body.lilac a:visited { color: #aa00aa; }
+body.lilac a:hover { color: #e600e6; }
+
+ul {
+	margin: 10px 10px 10px 10px;
+	padding: 0px 0px 0px 15px;
+}
+
+ul.arrow, ul.arrow-big, ul.checkbox, ul.checkbox-big {
+	margin: 10px 10px 10px 20px;
+	padding: 0px 0px 0px 0px;
+	list-style: none;
+}
+
+ul.checkbox li {
+	margin: 10px 0px 10px 0px;
+	padding: 8px 0px 5px 30px;
+	background: url(../images/list_checkbox.png) 0 0 no-repeat;
+	font-weight: bold;
+	line-height: 100%
+}
+
+ul.checkbox-big li {
+	margin: 15px 0px 15px 0px;
+	padding: 15px 0px 20px 55px;
+	background: url(../images/list_checkbox_big.png) 0 0 no-repeat;
+	font-size: 200%;
+	font-weight: bold;
+}
+
+ul.arrow li {
+	margin: 5px 0px 0px 0px;
+	padding: 3px 0px 10px 35px;
+	background: url(../images/list_arrow.png) 0 0 no-repeat;
+	font-weight: bold;
+}
+
+ul.arrow-big li {
+	margin: 15px 0px 15px 0px;
+	padding: 10px 0px 30px 60px;
+	background: url(../images/list_arrow_big.png) 0 0 no-repeat;
+	font-size: 200%;
+	font-weight: bold;
+}
+
+ol {
+	margin: 10px 10px 10px 20px;
+	padding: 0px 0px 0px 15px;
+}
+
+ol.disc {
+	padding: 0px 0px 0px 27px;
+	background: url(../images/list_disc.png) 0 0 repeat-y;
+}
+
+ol.disc li {
+	padding: 0px 0px 6px 12px;
+	font-weight: bold;
+	line-height: 28px;
+}
+
+ol.disc-big {
+	padding: 0px 0px 0px 45px;
+	font-size: 200%;
+	background: url(../images/list_disc_big.png) 0 0 repeat-y;
+}
+
+ol.disc-big li {
+	padding: 0px 0px 12px 20px;
+	font-weight: bold;
+	line-height: 45px;
+}
+
+div.note {
+	margin: 10px 0px 10px 0px;
+	padding: 5px 10px 5px 10px;
+	border: 1px solid #dcdcdc;
+	background: #f0f0f0;
+	text-align:justify;
+}
+
+div.alert {
+	margin: 10px 0px 10px 0px;
+	padding: 7px 10px 7px 35px;
+	border: 1px solid #dcdcdc;
+	background: #f0f0f0 url(../images/div_alert.png) 3px 3px no-repeat;
+	text-align:justify;
+}
+
+div.download {
+	margin: 10px 0px 10px 0px;
+	padding: 7px 10px 7px 35px;
+	border: 1px solid #dcdcdc;
+	background: #f0f0f0 url(../images/div_download.png) 3px 3px no-repeat;
+	text-align:justify;
+}
+
+div.info {
+	margin: 10px 0px 10px 0px;
+	padding: 7px 10px 7px 35px;
+	border: 1px solid #dcdcdc;
+	background: #f0f0f0 url(../images/div_info.png) 3px 3px no-repeat;
+	text-align:justify;
+}
+
+div.tip {
+	margin: 10px 0px 10px 0px;
+	padding: 7px 10px 7px 35px;
+	border: 1px solid #dcdcdc;
+	background: #f0f0f0 url(../images/div_tip.png) 3px 3px no-repeat;
+	text-align:justify;
+}
+
+blockquote {
+	margin: 10px 0px 10px 0px;
+	padding: 10px 35px 10px 35px;
+	background: url(../images/blockquote_start.png) 0 0 no-repeat;
+	text-align:justify;
+}
+
+blockquote div {
+	margin: 0px -35px -10px 0px;
+	padding: 0px 35px 10px 0px;
+	background: url(../images/blockquote_end.png) 100% 100% no-repeat;
+}
+
+blockquote.big {
+	margin: 10px 0px 10px 0px;
+	padding: 50px 50px 50px 50px;
+	background: url(../images/blockquote_big_start.png) 0 0 no-repeat;
+	font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+	font-size: 300%;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 100%;
+	text-align: left;
+}
+
+blockquote.big div {
+	margin: 0px -50px -50px 0px;
+	padding: 0px 30px 50px 0px;
+	background: url(../images/blockquote_big_end.png) 100% 100% no-repeat;
+}
+
+pre {
+	margin: 2px 0px 2px 0px;
+	padding: 10px 10px 10px 10px;
+	border: 1px solid #969696;
+	border-left: 20px solid #969696;
+	background: #f0f0f0;
+	font-size: 90%;
+	color: #646464;
+	/* Browser specific (not valid) styles to make preformatted text wrap */
+	/*white-space: pre-wrap;       /* css-3 */
+	/*white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+}
+
+em.box, em.file, em.directory {
+	font-family: "Courier New", Courier, monospace;
+	font-style: normal;
+}
+
+em.box { 
+	padding: 0px 2px 0px 2px;
+	background:#f0f0f0;
+	border: 1px #dcdcdc solid;
+}
+
+em.file { 
+	padding: 0px 0px 0px 13px;
+	background: transparent url(../images/em_file.png) 0 1px no-repeat;
+	color: #323232;
+}
+
+em.directory { 
+	padding: 0px 0px 0px 16px;
+	background: transparent url(../images/em_directory.png) 0 1px no-repeat;
+	color: #323232;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	padding-bottom: 0px;
+	margin-bottom: 5px;
+	line-height: 100%;
+}
+
+h1 {
+	font-size: 70%;
+	font-weight: normal;
+	color: #000000;
+}
+
+h2 {
+	font-size: 100%;
+	color: #b4b4b4;
+}
+
+h3 {
+	font-size: 95%;
+}
+
+h4 {
+	font-size: 50%;
+	font-weight: normal;
+	color: #000000;
+}
+
+h5 {
+	font-size: 45%;
+	color: #787878;
+}
+
+h6 {
+	font-size: 40%;
+	color: #000000;
+}
+
+body.red h1, body.red h4, body.red h6 { color: #c80000; }
+body.blue h1, body.blue h4, body.blue h6 { color: #00aaff; }
+body.green h1, body.green h4, body.green h6 { color: #64c832; }
+body.yellow h1, body.yellow h4, body.yellow h6 { color: #ffa000; }
+body.lilac h1, body.lilac h4, body.lilac h6 { color: #9600ff; }

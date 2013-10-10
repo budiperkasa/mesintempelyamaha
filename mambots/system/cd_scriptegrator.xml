@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mosinstall version="1.0.1" type="mambot" group="system">
+  <name>Core Design Scriptegrator plugin</name>
+  <author>Daniel Rataj</author>
+  <creationDate>March 6th, 2008</creationDate>
+  <copyright>(C) 2007 GreatJoomla.com</copyright>
+  <license>Attribution-NonCommercial 3.0 Unported</license>
+  <authorEmail>info@greatjoomla.com</authorEmail>
+  <authorUrl>www.greatjoomla.com</authorUrl>
+	<version>1.1.4</version>
+	<description>
+	<![CDATA[<h2 style="border-bottom: 1px #C64934 dotted; color: #C64934">Core Design Scriptegrator plugin for Joomla! 1.0</h2>
+	<div style="background: transparent url(../mambots/system/cd_scriptegrator/images/cd_scriptegrator_plugin_logo.png) top left no-repeat; height: 120px; width: 120px; float: right; margin-right: 10px; margin-left: 10px"></div>
+      <p><span style="font-weight: bold">Description:</span> Core Design Scriptegrator plugin. Integrate the different scripts (CSS, JS, PHP) for use with our other extensions.</p>
+      <p><span style="font-weight: bold">Version:</span> 1.1.4 (released on March 6th, 2008)</p>
+      <p><span style="font-weight: bold">Author:</span> Daniel Rataj, <a href="http://www.greatjoomla.com/" title="Open in new window" target="_blank">www.greatjoomla.com</a></p>
+      <h2 style="border-bottom: 1px #C64934 dotted; color: #C64934">Extensions for use with this plugin</h2>
+      <p>Please visit our websites for more information.</p>
+      </p>
+      <h2 style="border-bottom: 1px #C64934 dotted; color: #C64934">Credits</h2>
+      Core Design Scriptegrator plugin use the following scripts:
+      <h3>Highslide JS</h3>
+      <p>Highslide JS is licensed under a Creative Commons Attribution-NonCommercial 2.5 License. This means you need the author's permission to use Highslide JS on commercial websites.</p>
+<p>Author site: <a href="http://vikjavev.no/highslide/" title="Open in new window" target="_blank">http://vikjavev.no/highslide/</a><br />
+Thanks Torstein ! </p>
+<h3>jQuery JavaScript library</h3>
+      <p>Query is a fast, concise, JavaScript Library that simplifies how you traverse HTML documents, handle events, perform animations, and add Ajax interactions to your web pages. jQuery is designed to change the way that you write JavaScript.</p>
+<p>Author site: <a href="http://www.jquery.com/" title="Open in new window" target="_blank">http://www.jquery.com/</a></p>
+      <h2 style="border-bottom: 1px #C64934 dotted; color: #C64934">Changelog</h2>
+      <p>Please visit our websites for more information.</p>
+      <h2 style="border-bottom: 1px #C64934 dotted; color: #C64934">Donate us</h2>
+      <p>If you like this extension please visit author's site and consider to make a donation. Thanks.</p>
+      ]]>
+	</description>
+	<files>
+		<filename mambot="cd_scriptegrator">cd_scriptegrator.php</filename>
+		<filename>cd_scriptegrator/index.html</filename>
+		<filename>cd_scriptegrator/license-cc-nc.txt</filename>
+		<filename>cd_scriptegrator/css/index.html</filename>
+		<filename>cd_scriptegrator/css/cd_scriptegrator.css</filename>
+		<filename>cd_scriptegrator/graphics/controlbar2.gif</filename>
+		<filename>cd_scriptegrator/graphics/controlbar3.gif</filename>
+		<filename>cd_scriptegrator/graphics/controlbar4.gif</filename>
+		<filename>cd_scriptegrator/graphics/controlbar4-hover.gif</filename>
+		<filename>cd_scriptegrator/graphics/fullexpand.gif</filename>
+		<filename>cd_scriptegrator/graphics/geckodimmer.png</filename>
+		<filename>cd_scriptegrator/graphics/index.html</filename>
+		<filename>cd_scriptegrator/graphics/loader.gif</filename>
+		<filename>cd_scriptegrator/graphics/loader.white.gif</filename>
+		<filename>cd_scriptegrator/graphics/zoomin.cur</filename>
+		<filename>cd_scriptegrator/graphics/zoomout.cur</filename>
+		<filename>cd_scriptegrator/graphics/outlines/beveled.png</filename>
+		<filename>cd_scriptegrator/graphics/outlines/glossy-dark.png</filename>
+		<filename>cd_scriptegrator/graphics/outlines/drop-shadow.png</filename>
+		<filename>cd_scriptegrator/graphics/outlines/index.html</filename>
+		<filename>cd_scriptegrator/graphics/outlines/outer-glow.png</filename>
+		<filename>cd_scriptegrator/graphics/outlines/rounded-black.png</filename>
+		<filename>cd_scriptegrator/graphics/outlines/rounded-white.png</filename>
+		<filename>cd_scriptegrator/images/index.html</filename>
+		<filename>cd_scriptegrator/images/cd_scriptegrator_plugin_logo.png</filename>
+		<filename>cd_scriptegrator/languages/index.html</filename>
+		<filename>cd_scriptegrator/languages/english.php</filename>
+		<filename>cd_scriptegrator/languages/czech.php</filename>
+		<filename>cd_scriptegrator/utils/index.html</filename>
+		<filename>cd_scriptegrator/utils/js/index.html</filename>
+		<filename>cd_scriptegrator/utils/js/highslide.packed.js</filename>
+		<filename>cd_scriptegrator/utils/php/index.html</filename>
+		<filename>cd_scriptegrator/utils/php/licence.php</filename>
+		<filename>cd_scriptegrator/utils/php/functions.php</filename>
+	</files>
+	<params>
+  <param name="@spacer" type="spacer" default="" label="Default Highslide settings" description="" />
+  <param name="outlineType" type="list" default="rounded-white" label="Rounded" description="Official reference: The outline type refers to PNG graphics within the outlines directory. These graphic outlines appear outside the CSS border after the image is fully expanded.">
+  	<option value="rounded-white">rounded-white</option>
+  	<option value="rounded-black">rounded-black</option>
+  	<option value="glossy-dark">glossy-dark</option>
+  	<option value="beveled">beveled</option>
+  	<option value="drop-shadow">drop-shadow</option>
+  	<option value="outer-glow">outer-glow</option>
+  </param>
+  <param name="outlineWhileAnimating" type="list" default="1" label="Outline while animating" description="Official reference: HTML content on the other hand is much less processor heavy, and a graphic outline while animating looks very good and distinguishes the popup from the background.">
+  <option value="1">Yes</option>
+  <option value="0">No</option>
+  </param>
+  <param name="showCredits" type="list" default="1" label="Show Highslide Credits" description="Official reference: There are no licence considerations in this; both commercial and non-commercial users can freely remove the credits label.">
+  <option value="1">Yes</option>
+  <option value="0">No</option>
+  </param>
+  <param name="expandDuration" type="text" default="250" label="Expand Duration" description="Official reference: Defines in milliseconds how long the zoom in effect should take." />
+  <param name="anchor" type="list" default="auto" label="Anchor" description="Official reference: The default setting is 'auto', which means the image tries to expand equally in all directions, but moves and/or contracts if it exceeds the client area.">
+  	<option value="auto">auto</option>
+  	<option value="top">top</option>
+  	<option value="top-right">top right</option>
+  	<option value="right">right</option>
+  	<option value="bottom-right">bottom right</option>
+  	<option value="bottom">bottom</option>
+  	<option value="bottom-left">bottom left</option>
+  	<option value="left">left</option>
+  	<option value="top-left">top left</option>
+  </param>
+  <param name="align" type="list" default="auto" label="Align" description="Official reference: Position of the full image in the client.">
+  	<option value="auto">auto</option>
+  	<option value="center">center</option>
+  </param>
+  <param name="transitions" type="list" default="auto" label="Transition" description="Official reference: The transitions property is an array with one or two items. The first item applies to opening or closing the expander on it's own. If a second parameter is given, this will apply when hs.previous or hs.next is called through links or key listeners.">
+  	<option value="expand">expand</option>
+  	<option value="fade">fade</option>
+  	<option value="expand+fade">expand+fade</option>
+  	<option value="fade+expand">fade+expand</option>
+  </param>
+  <param name="dimmingOpacity" type="text" default="0" label="Dimming Opacity" description="Official reference: The dimmingOpacity property creates the popular Lightbox darkening/lightening background effect. Setting dimmingOpacity to 0 disables the effect." />
+	</params>
+</mosinstall>

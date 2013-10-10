@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>SlideSHow</name>
+	<author>Budi Perkasa</author>
+	<creationDate>Dec 2007</creationDate>
+	<copyright>(C) 2007 budi-perkasa.com - All lefts reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>info@budi-perkasa.com</authorEmail>
+	<authorUrl>www.budi-perkasa.com</authorUrl>
+	<version>2.0.1</version>
+	<description>
+		<![CDATA[
+		]]>
+		
+	</description>
+	<files>
+		<filename module="mod_rokslideshow">mod_rokslideshow.php</filename>
+		<filename>rokslideshow/mootools.js</filename>
+		<filename>rokslideshow/slideshow.rc1.packed.js</filename>
+		<filename>rokslideshow/slideshow.rc1.raw.js</filename>
+	</files>
+	<params>
+	  <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+	  <param name="@spacer" type="spacer" default="" label="" description="" />
+	  <param name="width" type="text" default="430" label="Width" description="Width of Slideshow in px" />
+	  <param name="height" type="text" default="200" label="Height" description="Height of Slideshow in px" />
+	  <param name="@spacer" type="spacer" default="" label="" description="" />
+	  <param name="imagePath" type="text" default="images/stories/fruit/" label="Images Directory" description="Location of images to be used in the rotation" />
+	  <param name="altTag" type="text" default="RokSlideshow - http://www.rocketwerx.com" label="Alt Tag" description="Alt tag for slideshow images" />
+	  <param name="showCaption" type="radio" default="1" label="Show Text Captions" description="Shows text captions if they are found.  See description above">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	  <param name="jslib" type="radio" default="1" label="Include Mootools JS Library" description="Select whether to include the JS lib as part of this module, Select No if the template already loads this">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="sortCriteria" type="list" default="0" label="Sort Criteria" description="The sort criteria of the images files">
+			<option value="0">Alphabetical</option>
+			<option value="1">Creation Date</option>
+		</param>
+		<param name="sortOrder" type="list" default="0" label="Sort Order" description="The sort order of the images files">
+			<option value="0">Ascending</option>
+			<option value="1">Descending</option>
+			<option value="2">Random</option>
+		</param>
+		<param name="sortOrderManual" type="text" default="" label="Manual Sort Order" description="Comma seperated list of images that describe the order - Example: image3.jpg,image2.jpg,image1.jpg - this will override Sort Criteria if set" />
+		<param name="imageStart" type="text" default="" label="Start Image" description="A specific image to start with, if not provided the first image as found by sort criteria and sort order will be used." />
+		<param name="imageResize" type="radio" default="1" label="Dynamic Image Resizing" description="If you are experiencing problems with zooming and other effects, try setting this to False">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="imageDuration" type="text" default="9000" label="Image Duration" description="Duration to stay on each image in ms" />
+		<param name="transDuration" type="text" default="2000" label="Transition Duration" description="Time it takes to transition between images in ms" />
+
+		<param name="transType" type="list" default="combo" label="Transition Type" description="Type of transition effect">
+		<option value="fade">Fading</option>
+			<option value="zoom">Zooming</option>
+			<option value="pan">Panning</option>
+			<option value="combo">Combo - Ken Burns Effect</option>
+			<option value="push">Pushing</option>
+			<option value="wipe">Wiping</option>
+		</param>
+		<param name="pan" type="text" default="10" label="Pan Percent" description="0 - 100% amount of panning for Panning or Combo type transitions" />
+		<param name="zoom" type="text" default="10" label="Zoom Percent" description="0 - 100% amount of zooming for Zooming or Combo type transitions" />
+		<param name="transition" type="list" default="bounceOut" label="Wipe/Push Transition" description="Transition effects for Wipe/Push transition types">
+			<option value="linear">Linear</option>
+			<option value="quadOut">Medium to Slow</option>
+			<option value="cubicOut">Fast to Slow</option>
+			<option value="quartOut">Very Fast to Slow</option>
+			<option value="quintOut">Uber Fast to Slow</option>
+			<option value="expoOut">Exponential Speed</option>
+			<option value="elasticOut">Elastic</option>
+			<option value="backIn">Back In</option>
+			<option value="backOut">Back Out</option>
+			<option value="backInOut">Back In and Out</option>
+			<option value="bounceOut">Bouncing</option>
+		</param>
+	  <param name="@spacer" type="spacer" default="" label="" description="" />
+	  
+	</params>
+</mosinstall>

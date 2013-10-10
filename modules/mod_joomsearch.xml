@@ -1,0 +1,24 @@
+<mosinstall type="module" version="4.5.2">
+<name>JoomSearch</name>
+<author>José Balça</author>
+<creationDate>January 2007</creationDate>
+<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+<authorEmail>jbalca@ipn.pt</authorEmail>
+<version>2.0</version>
+<description>Search anything in differents sites using Google AJAX search API.
+              IMPORTANT: To use this module you need to get a key from google, you can get it here [http://code.google.com/apis/ajaxsearch/] </description>
+<files>
+<filename module="mod_joomsearch">mod_joomsearch.php</filename>
+</files>
+<params>
+<param name="web" type="radio" default="0" label="Search the Web" description="Select whether to search the web or only in the mentioned sites">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+<param name="@spacer" type="spacer" default="" label="" description="" />
+<param name="width" type="text" default= "300" label="Width of the module" description="Choose the best witdth to the module, so that it can fit well in your site"/>
+<param name="url" type="text" default= "google.com, amazon.com" label="URL" description="URLs of the differents sites that will be used during the search"/>
+<param name="@spacer" type="spacer" default="" label="" description="" />
+<param name="key" type="text" default="" label="Key" description="Google AJAX Search API key"/>
+</params>
+</mosinstall>

@@ -1,0 +1,111 @@
+body {
+	color: #c8c8c8;
+}
+
+div#page-header {
+	background: #1e1e1e url(../../images/black/page_bg.png) 50% 0 repeat-x;
+}
+
+body.red div#page-header {
+	background: #1e1e1e url(../../images/black/page_bg_red.png) 50% 0 repeat-x;
+}
+
+body.blue div#page-header {
+	background: #1e1e1e url(../../images/black/page_bg_blue.png) 50% 0 repeat-x;
+}
+
+body.green div#page-header {
+	background: #1e1e1e url(../../images/black/page_bg_green.png) 50% 0 repeat-x;
+}
+
+body.yellow div#page-header {
+	background: #1e1e1e url(../../images/black/page_bg_yellow.png) 50% 0 repeat-x;
+}
+
+body.lilac div#page-header {
+	background: #1e1e1e url(../../images/black/page_bg_lilac.png) 50% 0 repeat-x;
+}
+
+a#switchfontsmall {
+	background: url(../../images/black/styleswitcher_fontsmall.png) 0 0 no-repeat;
+}
+
+a:hover#switchfontsmall {
+	background: url(../../images/black/styleswitcher_fontsmall_hover.png) 0 0 no-repeat;
+}
+
+a#switchfontmedium {
+	background: url(../../images/black/styleswitcher_fontmedium.png) 0 0 no-repeat;
+}
+
+a:hover#switchfontmedium {
+	background: url(../../images/black/styleswitcher_fontmedium_hover.png) 0 0 no-repeat;
+}
+
+a#switchfontlarge {
+	background: url(../../images/black/styleswitcher_fontlarge.png) 0 0 no-repeat;
+}
+
+a:hover#switchfontlarge {
+	background: url(../../images/black/styleswitcher_fontlarge_hover.png) 0 0 no-repeat;
+}
+
+a#switchwidththin {
+	background: url(../../images/black/styleswitcher_widththin.png) 0 0 no-repeat;
+}
+
+a:hover#switchwidththin {
+	background: url(../../images/black/styleswitcher_widththin_hover.png) 0 0 no-repeat;
+}
+
+a#switchwidthwide {
+	background: url(../../images/black/styleswitcher_widthwide.png) 0 0 no-repeat;
+}
+
+a:hover#switchwidthwide {
+	background: url(../../images/black/styleswitcher_widthwide_hover.png) 0 0 no-repeat;
+}
+
+a#switchwidthfluid {
+	background: url(../../images/black/styleswitcher_widthfluid.png) 0 0 no-repeat;
+}
+
+a:hover#switchwidthfluid {
+	background: url(../../images/black/styleswitcher_widthfluid_hover.png) 0 0 no-repeat;
+}
+
+div#inset {
+	background: url(../../images/black/search_tab.png) 0 0 no-repeat;
+}
+
+div#menu .overlay {
+	background: url(../../images/black/menu_overlay.png) 0 0 repeat-x;
+}
+
+div#page-body {
+	background: #1e1e1e;
+}
+
+div#page-footer {
+	background: #000000 url(../../images/black/page_bg_footer.png) 50% 0 repeat-x;
+}
+
+body.red div#page-footer {
+	background: #000000 url(../../images/black/page_bg_footer_red.png) 50% 0 repeat-x;
+}
+
+body.blue div#page-footer {
+	background: #000000 url(../../images/black/page_bg_footer_blue.png) 50% 0 repeat-x;
+}
+
+body.green div#page-footer {
+	background: #000000 url(../../images/black/page_bg_footer_green.png) 50% 0 repeat-x;
+}
+
+body.yellow div#page-footer {
+	background: #000000 url(../../images/black/page_bg_footer_yellow.png) 50% 0 repeat-x;
+}
+
+body.lilac div#page-footer {
+	background: #000000 url(../../images/black/page_bg_footer_lilac.png) 50% 0 repeat-x;
+}

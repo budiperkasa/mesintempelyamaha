@@ -1,0 +1,385 @@
+/* topmenu */
+div#topmenu ul {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	float: left;
+}
+
+div#topmenu li {
+	float: left;
+	display: block;
+}
+
+div#topmenu li a {
+	float: left;
+	display: block;
+	position: relative;
+	height: 20px;
+	padding: 0px 10px 0px 10px;
+	background: url(../images/topmenu_item_bg.png) 0 4px no-repeat;
+	line-height: 17px;
+	overflow: hidden;
+	font-size: 85%;
+	text-decoration: none;
+}
+
+div#topmenu li.item1 a {
+	background: none;
+}
+
+/* menu */
+div#menu ul {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	float: left;
+}
+
+div#menu li {
+	float: left;
+	display: block;
+	margin: 10px 2px 0px 0px;
+	background: url(../images/menu_item_r.png) 100% 0 no-repeat;
+}
+
+div#menu li a {
+	float: left;
+	display: block;
+	height: 35px;
+	padding: 0px 20px 0px 20px;
+	background: url(../images/menu_item_l.png) 0 0 no-repeat;
+	line-height: 28px;
+	overflow: hidden;
+	font-size: 100%;
+	font-weight: bold;
+	color: #646464;
+	text-decoration: none;
+}
+
+div#menu a:link, div#menu a:visited {
+	color: #646464;
+}
+
+div#menu li a:hover {
+	color: #000000;
+}
+
+div#menu li.item1 {
+	background: url(../images/menu_item_r_red.png) 100% 0 no-repeat;
+}
+
+div#menu li.item1 a {
+	background: url(../images/menu_item_l_red.png) 0 0 no-repeat;
+}
+
+div#menu li.item2 {
+	background: url(../images/menu_item_r_blue.png) 100% 0 no-repeat;
+}
+
+div#menu li.item2 a {
+	background: url(../images/menu_item_l_blue.png) 0 0 no-repeat;
+}
+
+div#menu li.item3 {
+	background: url(../images/menu_item_r_green.png) 100% 0 no-repeat;
+}
+
+div#menu li.item3 a {
+	background: url(../images/menu_item_l_green.png) 0 0 no-repeat;
+}
+
+div#menu li.item4 {
+	background: url(../images/menu_item_r_yellow.png) 100% 0 no-repeat;
+}
+
+div#menu li.item4 a {
+	background: url(../images/menu_item_l_yellow.png) 0 0 no-repeat;
+}
+
+div#menu li.item5 {
+	background: url(../images/menu_item_r_lilac.png) 100% 0 no-repeat;
+}
+
+div#menu li.item5 a {
+	background: url(../images/menu_item_l_lilac.png) 0 0 no-repeat;
+}
+
+div#menu li.active {
+	position: relative;
+	z-index: 3;
+	margin: 0px 2px 0px 0px;
+	background: url(../images/menu_item_r_active.png) 100% 0 no-repeat;
+}
+
+div#menu li.active a {
+	height: 50px;
+	background: url(../images/menu_item_l_active.png) 0 0 no-repeat;
+	color: #000000;
+}
+
+/* sub menu */
+div#submenu ul {
+	padding: 0px;
+	margin: 0px;
+	width: 200px;
+	overflow: hidden;
+	list-style: none;
+	background: #ffffff;
+}
+
+div#submenu li {
+	display: block;
+}
+
+div#submenu li a, div#submenu li span {
+	height: 25px;
+	display: block;
+	line-height: 25px;
+	text-decoration: none;
+	color: #646464;
+}
+
+div#submenu a:link, div#submenu a:visited {
+	color: #646464;
+}
+
+div#submenu li#current a {
+	font-weight: bold;
+}
+
+div#submenu li#current li a {
+	font-weight: normal;
+}
+
+div#submenu li a:hover, div#submenu li span:hover, div#submenu li span.sfhover {
+	color: #000000;
+}
+
+div#submenu li.level2 {
+	background: #e6e6e6 no-repeat;
+}
+
+.layoutleft div#submenu li.level2 {
+	margin: 0px 0px 5px 10px;
+}
+
+.layoutright div#submenu li.level2 {
+	margin: 0px 10px 5px 0px;
+}
+
+div#submenu li.level2 a, div#submenu li.level2 span {
+	padding: 0px 0px 0px 25px;
+}
+
+.layoutleft div#submenu li.level2 a, .layoutleft div#submenu li.level2 span {
+	background: url(../images/submenu_level2_item_left.png) 0 0 no-repeat;
+}
+
+.layoutright div#submenu li.level2 a, .layoutright div#submenu li.level2 span {
+	background: url(../images/submenu_level2_item_right.png) 100% 0 no-repeat;
+}
+
+div#submenu li.parent {
+	background: #e6e6e6 url(../images/submenu_level2_item_parent.png) 0 0 no-repeat;
+}
+
+div#submenu li.parent span {
+	cursor: pointer;
+}
+
+div#submenu li.active, div#submenu li.active:hover {
+	background-color: #969696;
+	margin: 0px 0px 5px 0px;
+}
+
+.layoutleft div#submenu li.active, .layoutleft div#submenu li.active:hover,
+.layoutright div#submenu li.active, .layoutright div#submenu li.active:hover {
+	margin: 0px 0px 5px 0px;
+}
+
+div#submenu li.active a, div#submenu li.active span, div#submenu li.active a:hover {
+	color: #ffffff;
+}
+
+#left div#submenu li.level2 li, #left div#submenu li.level2 li:hover, #left div#submenu li.level2 li.sfhover {
+	margin: 5px 0px 0px 25px;
+}
+
+#left div#submenu li.level2 ul, div#submenu li.level2 li, #left div#submenu li.level2 li.active {
+	background: #ffffff;
+}
+
+#left div#submenu li.level2 li a:hover, #left div#submenu li.level2 li.active a:hover {
+	color: #000000;
+}
+
+#left div#submenu li.level3 a {
+	background: url(../images/submenu_level3_item_bg.png) 0px 2px no-repeat;
+	padding: 0px 0px 0px 20px;
+	width: 155px;
+	color: #646464;
+	height: 20px;
+	line-height: 20px;
+}
+
+#left div#submenu li.level3 a:hover {
+	background: #f0f0f0 url(../images/submenu_level3_item_bg.png) 0px 2px no-repeat;
+}
+
+#left div#submenu li.level3 li, #left div#submenu li.level3 li:hover, #left div#submenu li.level3 li.sfhover {
+	margin: 5px 0px 0px 0px;
+}
+
+#left div#submenu li.level4 a {
+	background: url(../images/submenu_level4_item_bg.png) 20px 2px no-repeat;
+	padding: 0px 0px 0px 40px;
+	width: 135px;
+}
+
+#left div#submenu li.level4 a:hover {
+	background: #f0f0f0 url(../images/submenu_level4_item_bg.png) 20px 2px no-repeat;
+}
+
+#left div#submenu li.level5 a  {
+	background: url(../images/submenu_level5_item_bg.png) 40px 2px no-repeat;
+	padding: 0px 0px 0px 60px;
+	width: 115px;
+}
+
+#left div#submenu li.level5 a:hover  {
+	background: #f0f0f0 url(../images/submenu_level5_item_bg.png) 40px 2px no-repeat;
+}
+
+/* sub menu static */
+div#submenu-static ul {
+	padding: 0px;
+	margin: 0px;
+	width: 200px;
+	overflow: hidden;
+	list-style: none;
+	background: #ffffff;
+}
+
+div#submenu-static li {
+	display: block;
+}
+
+div#submenu-static li a, div#submenu-static li span {
+	height: 25px;
+	display: block;
+	line-height: 25px;
+	text-decoration: none;
+	color: #646464;
+}
+
+div#submenu-static a:link, div#submenu-static a:visited {
+	color: #646464;
+}
+
+div#submenu-static li#current a {
+	font-weight: bold;
+}
+
+div#submenu-static li#current li a {
+	font-weight: normal;
+}
+
+div#submenu-static li a:hover, div#submenu-static li span:hover, div#submenu-static li span.sfhover {
+	color: #000000;
+}
+
+div#submenu-static li.level1 {
+	background: #e6e6e6 no-repeat;
+}
+
+.layoutleft div#submenu-static li.level1 {
+	margin: 0px 0px 5px 10px;
+}
+
+.layoutright div#submenu-static li.level1 {
+	margin: 0px 10px 5px 0px;
+}
+
+div#submenu-static li.level1 a, div#submenu-static li.level1 span {
+	padding: 0px 0px 0px 25px;
+}
+
+.layoutleft div#submenu-static li.level1 a, .layoutleft div#submenu-static li.level1 span {
+	background: url(../images/submenu_level2_item_left.png) 0 0 no-repeat;
+}
+
+.layoutright div#submenu-static li.level1 a, .layoutright div#submenu-static li.level1 span {
+	background: url(../images/submenu_level2_item_right.png) 100% 0 no-repeat;
+}
+
+div#submenu-static li.parent {
+	background: #e6e6e6 url(../images/submenu_level2_item_parent.png) 0 0 no-repeat;
+}
+
+div#submenu-static li.parent span {
+	cursor: pointer;
+}
+
+div#submenu-static li.active, div#submenu-static li.active:hover {
+	background-color: #969696;
+	margin: 0px 0px 5px 0px;
+}
+
+.layoutleft div#submenu-static li.active, .layoutleft div#submenu-static li.active:hover,
+.layoutright div#submenu-static li.active, .layoutright div#submenu-static li.active:hover {
+	margin: 0px 0px 5px 0px;
+}
+
+div#submenu-static li.active a, div#submenu-static li.active span, div#submenu-static li.active a:hover {
+	color: #ffffff;
+}
+
+#left div#submenu-static li.level1 li, #left div#submenu-static li.level1 li:hover, #left div#submenu-static li.level1 li.sfhover {
+	margin: 5px 0px 0px 25px;
+}
+
+#left div#submenu-static li.level1 ul, div#submenu-static li.level1 li, #left div#submenu-static li.level1 li.active {
+	background: #ffffff;
+}
+
+#left div#submenu-static li.level1 li a:hover, #left div#submenu-static li.level1 li.active a:hover {
+	color: #000000;
+}
+
+#left div#submenu-static li.level2 a {
+	background: url(../images/submenu_level3_item_bg.png) 0px 2px no-repeat;
+	padding: 0px 0px 0px 20px;
+	width: 155px;
+	color: #646464;
+	height: 20px;
+	line-height: 20px;
+}
+
+#left div#submenu-static li.level2 a:hover {
+	background: #f0f0f0 url(../images/submenu_level3_item_bg.png) 0px 2px no-repeat;
+}
+
+#left div#submenu-static li.level2 li, #left div#submenu-static li.level2 li:hover, #left div#submenu-static li.level2 li.sfhover {
+	margin: 5px 0px 0px 0px;
+}
+
+#left div#submenu-static li.level3 a {
+	background: url(../images/submenu_level4_item_bg.png) 20px 2px no-repeat;
+	padding: 0px 0px 0px 40px;
+	width: 135px;
+}
+
+#left div#submenu-static li.level3 a:hover {
+	background: #f0f0f0 url(../images/submenu_level4_item_bg.png) 20px 2px no-repeat;
+}
+
+#left div#submenu-static li.level4 a  {
+	background: url(../images/submenu_level5_item_bg.png) 40px 2px no-repeat;
+	padding: 0px 0px 0px 60px;
+	width: 115px;
+}
+
+#left div#submenu-static li.level4 a:hover  {
+	background: #f0f0f0 url(../images/submenu_level5_item_bg.png) 40px 2px no-repeat;
+}

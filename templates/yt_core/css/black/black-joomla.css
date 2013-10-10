@@ -1,0 +1,28 @@
+.contentpaneopen hr {
+	border-bottom: 1px solid #464646;
+}
+
+.sectiontableheader {
+	background: #323232;
+	border-bottom: 1px solid #505050;
+}
+
+tr.sectiontableentry1 td {
+	background: #3c3c3c;
+	border-bottom: 1px solid #464646;
+}
+
+tr.sectiontableentry2 td {
+	background: #323232;
+	border-bottom: 1px solid #464646;
+}
+
+td.sectiontableentry1 {
+	background: #3c3c3c;
+	border-bottom: 1px solid #464646;
+}
+
+td.sectiontableentry2 {
+	background: #323232;
+	border-bottom: 1px solid #464646;
+}
