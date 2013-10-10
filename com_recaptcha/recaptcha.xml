@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="component" version="1.0.0">
+ <name>reCAPTCHA</name>
+  <author>Robert van den Breemen</author>
+  <creationDate>8 september 2007</creationDate>
+  <copyright>(C) 2007 Robert van den Breemen. All rights reserved.</copyright>
+  <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+  <authorEmail>rvdbreemen@gmail.com</authorEmail>
+  <authorUrl>http://joomlacode.org/gf/project/recaptcha/</authorUrl>
+  <version>0.0.4</version>
+  <description>This is the modified registration component for Joomla 1.0.13 core manage registration of new user, with reCAPTCHA security images.</description>
+
+<params>
+		<param name="public_key" type="text" size="40" default="" label="Public Key" description="Public reCAPTCHA key" />
+		<param name="private_key" type="text" size="40" default="" label="Private Key" description="Private reCAPTCHA key" />
+</params>
+
+<files>
+		<filename>index.html</filename>
+		<filename>recaptcha.html.php</filename>
+		<filename>recaptcha.php</filename>
+		<filename>recaptchalib.php</filename>
+		<filename>recaptcha.xml</filename>
+</files>
+
+<installfile>
+	<filename>install.recaptcha.php</filename>
+</installfile>
+
+<administration>
+	<menu>reCAPTCHA</menu>
+<files>
+		<filename>index.html</filename>		
+		<filename>admin.recaptcha.php</filename>
+		<filename>admin.recaptcha.html.php</filename>
+		<filename>toolbar.recaptcha.php</filename>
+		<filename>toolbar.recaptcha.html.php</filename>
+		<filename>recaptcha.xml</filename>
+</files>
+</administration>
+</mosinstall>

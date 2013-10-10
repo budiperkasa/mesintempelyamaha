@@ -1,0 +1,85 @@
+/**
+ * Tag Component Global CSS
+ * @author gabe@fijiwebdesign.com
+ * @copyright (c) fijiwebdesign.com
+ * @license http://www.fijiwebdesign.com/
+ */
+ 
+/** Tags */
+
+/* taglist wrapper div */
+.tags {
+
+}
+/* ul */
+.tags .taglist {
+	margin: 0;
+	padding: 0;
+}
+/* each tag */
+.tags .tag {
+
+}
+/* tags and add tag btn */
+.tags li {
+	display: inline;
+	list-style: none;
+	list-style-type: none;
+}
+/* add tags button */
+.tags .tag_add {
+	vertical-align: middle;
+}
+/* seperator */
+.tags .sep {
+
+}
+
+/** navigation */
+.pagenav {
+	text-align: center;
+}
+
+/** tag cloud */
+.tag_cloud {
+	text-align: left;
+}
+
+/** related tags tooltip */
+#rel_tooltip {
+	overlfow: hidden;
+	display: block;
+	position: absolute;
+	padding: 10px;
+	border: 1px solid #666666;
+}
+
+/* tags */
+ul.taglist {
+	background: url(components/com_tag/images/icons/tag_red.png) center left no-repeat;
+	padding-left: 20px !important;
+}
+
+ul.taglist li {
+	list-style: none;
+	background: none;
+	padding: 0;
+}
+
+.tag_rsslink {
+	background: url(components/com_tag/images/icons/rss.png) center left no-repeat;
+	padding-left: 20px !important;
+}
+
+#rel_tooltip {
+	background: #fff;
+}
+
+#rel_tooltip div.componentheading {
+	font-weight: normal;
+	font-size: 100% !important;
+}
+
+#rel_tooltip div.componentheading i {
+	font-weight: bold;
+}
